@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="robots" content="noindex">
+      <title>Admin</title>
+      <link rel="stylesheet" type="text/css" href="yapilyui.css">
+      <link rel="shortcut icon" href="icons/icon-48x48.png">
+      <meta charset="UTF-8">
+   </head>
+   <body class="fixed-width-admin" >
+      <div id="modal" class="modal ">
+         <!-- Modal content -->
+         <!-- Modal content -->
+         <div class="modal-content slim-center">
+            <span class="close">&times;</span>
+            <h2>Select countries</h2>
+            <div class="margin-bottom-big justify-top ">
+               <div class="dropdown-search ">
+                  <div id="dropdown-countries" class="dropdown-content3 tall">
+                     <div class="search ">
+                        <div>
+                           <input type="text" class="input-icon margin-bottom-normal width-100" placeholder="Search" >
+                        </div>
+                        <div class="flex justify-space-between align-items-center  clear-all"><span>0 selected</span><a href="">Clear</a></div>
+                     </div>
+                     <div class="country-list"><label class="container">🇬🇧 United Kingdom
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🇮🇹 Italy
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🇪🇺 Europe
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🏳 Country
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🏳 Country
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🏳 Country
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🏳 Country
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🏳 Country
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🏳 Country
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🏳 Country
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🏳 Country
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🏳 Country
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🏳 Country
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🏳 Country
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🏳 Country
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🏳 Country
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                     <div class="country-list"><label class="container">🏳 Country
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="action-area subgrid2">
+               <button class="secondary"> Cancel</button><button class="primary"> Apply</button>
+            </div>
+         </div>
+      </div>
+      <div class="width-100 ">
+         <div class="flex ">
+            <div class="filters2  card" >
+               <div class="isologo margin-bottom-big">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M26.7149 0.000520314C23.8356 0.0401149 21.5328 2.43464 21.571 5.34861L21.6184 8.87347C21.6259 9.49756 21.3894 10.099 20.9601 10.5468L20.7878 10.7259C20.3576 11.1756 19.7672 11.4339 19.1489 11.4415L18.6572 11.449L18.6581 11.4518C17.8433 10.922 16.8702 10.6185 15.8291 10.6317C14.937 10.6439 14.1017 10.8871 13.3754 11.3048C13.2143 11.2972 13.056 11.2831 12.893 11.285L12.8372 11.2859C12.2216 11.2944 11.6266 11.0559 11.1852 10.6203C10.7401 10.1839 10.4868 9.58712 10.4775 8.9602L10.4291 5.21192C10.39 2.29795 8.0247 -0.0343606 5.14447 0.00429122C2.26518 0.0429431 -0.03862 2.43841 0.000490693 5.35333C0.0386702 8.26824 2.40487 10.5996 5.28322 10.561L8.765 10.5138C9.38146 10.5053 9.97557 10.7448 10.4179 11.1803L10.5958 11.3538C11.039 11.7912 11.2932 12.3898 11.3016 13.0149L11.3091 13.5117C11.3109 13.5107 11.3128 13.5098 11.3146 13.5089C10.9627 14.2244 10.7662 15.0314 10.7764 15.8864C10.7904 16.9083 11.0995 17.8567 11.6154 18.6543C11.6145 18.7523 11.6043 18.8494 11.6043 18.9493L11.6052 19.005C11.6126 19.6291 11.377 20.2305 10.9468 20.6774C10.5166 21.1289 9.92622 21.3854 9.3079 21.3938L5.60635 21.4429C2.72613 21.4806 0.423258 23.876 0.461438 26.7919C0.499617 29.7078 2.86674 32.0382 5.7451 31.9995C8.62532 31.9618 10.9282 29.5654 10.8891 26.6495L10.8435 23.1256C10.8351 22.5025 11.0716 21.9001 11.5009 21.4523L11.6722 21.2741C12.1043 20.8235 12.6938 20.5661 13.313 20.5586L13.8028 20.552C13.8019 20.5482 13.7991 20.5435 13.7972 20.5388C14.4584 20.8414 15.1922 21.0101 15.9651 20.9988C18.7932 20.9611 21.0541 18.6081 21.0169 15.746C21.0104 15.2284 20.9266 14.7288 20.7804 14.2593C20.8279 13.8643 20.8595 13.4627 20.8549 13.0526V12.996C20.8474 12.3729 21.083 11.7705 21.5123 11.3236C21.9425 10.873 22.5329 10.6166 23.1521 10.6071L26.8546 10.5581C29.7339 10.5185 32.0377 8.124 31.9995 5.20815C31.9604 2.29323 29.5942 -0.040017 26.7149 0.000520314Z" fill="#ffffff"/>
+                  </svg>
+                  <div class="flex column">
+                     <em class="margin-left-normal ">Admin</em><!-- <span class="tag margin-left-normal internal">Staging</span>-->
+                  </div>
+               </div>
+               <ul class="">
+                  <li>
+                     <a href="">
+                        <div class="flex align-center">
+                           <svg   width="24" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="financial  white margin-right-normal">
+                              <path d="M16 0.5L29.8564 12.1129H2.14355L16 0.5Z" />
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6788 0.116787C15.8646 -0.038929 16.1354 -0.038929 16.3212 0.116787L30.1776 11.7297C30.3387 11.8647 30.3981 12.0862 30.3263 12.2838C30.2544 12.4814 30.0666 12.6129 29.8564 12.6129H2.14358C1.93333 12.6129 1.74554 12.4814 1.67368 12.2838C1.60183 12.0862 1.66127 11.8647 1.82241 11.7297L15.6788 0.116787ZM16 1.15238L3.51859 11.6129H28.4814L16 1.15238Z" />
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16.0161C8.55228 16.0161 9 16.4638 9 17.0161V25.2742C9 25.8265 8.55228 26.2742 8 26.2742C7.44772 26.2742 7 25.8265 7 25.2742V17.0161C7 16.4638 7.44772 16.0161 8 16.0161Z" />
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M16 16.0161C16.5523 16.0161 17 16.4638 17 17.0161V25.2742C17 25.8265 16.5523 26.2742 16 26.2742C15.4477 26.2742 15 25.8265 15 25.2742V17.0161C15 16.4638 15.4477 16.0161 16 16.0161Z" />
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M24 16.0161C24.5523 16.0161 25 16.4638 25 17.0161V25.2742C25 25.8265 24.5523 26.2742 24 26.2742C23.4477 26.2742 23 25.8265 23 25.2742V17.0161C23 16.4638 23.4477 16.0161 24 16.0161Z" />
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 31.5C0 30.9477 0.447715 30.5 1 30.5H31C31.5523 30.5 32 30.9477 32 31.5C32 32.0523 31.5523 32.5 31 32.5H1C0.447715 32.5 0 32.0523 0 31.5Z" />
+                           </svg>
+                           Institutions
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="">
+                        <div class="flex align-center">
+                           <svg  width="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="financial  white margin-right-normal">
+                              <circle cx="16" cy="8" r="8" />
+                              <path d="M0 24C0 21.7909 1.79086 20 4 20H28C30.2091 20 32 21.7909 32 24V32H0V24Z" />
+                           </svg>
+                           People
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="">
+                        <div class="flex align-center">
+                           <svg   width="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="financial  white margin-right-normal">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0C1.79083 0 0 1.79089 0 4V28C0 30.2091 1.79083 32 4 32H28C30.2092 32 32 30.2091 32 28V4C32 1.79089 30.2092 0 28 0H4ZM8 6C6.89545 6 6 6.89539 6 8V15C6 16.1046 6.89545 17 8 17H15C16.1046 17 17 16.1046 17 15V8C17 6.89539 16.1046 6 15 6H8Z" />
+                           </svg>
+                           Applications
+                     </a>
+                     </div>
+                  </li>
+                  <li>
+                     <a href="">
+                        <div class="flex align-center">
+                           <svg width="24" viewBox="0 0 19 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="financial  white margin-right-normal">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5766 9.28831C14.5766 12.209 12.209 14.5766 9.28831 14.5766C6.36766 14.5766 4 12.209 4 9.28831C4 6.36766 6.36766 4 9.28831 4C12.209 4 14.5766 6.36766 14.5766 9.28831ZM18.5766 9.28831C18.5766 14.4181 14.4181 18.5766 9.28831 18.5766C4.15852 18.5766 0 14.4181 0 9.28831C0 4.15852 4.15852 0 9.28831 0C14.4181 0 18.5766 4.15852 18.5766 9.28831ZM4.64453 34V20.8821C6.01072 21.6724 7.59688 22.1247 9.28869 22.1247C10.9805 22.1247 12.5667 21.6724 13.9328 20.8821V34H13.7046L9.28831 27.0337L4.87199 34H4.64453Z" fill=""/>
+                           </svg>
+                           Certificates
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="">
+                        <div class="flex align-center">
+                           <svg   width="24" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="financial  white margin-right-normal">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4437 14.1199C15.4684 13.6331 15.4811 13.1378 15.4811 12.6357C15.4811 5.65722 13.0272 0 10 0C6.97286 0 4.51886 5.65722 4.51886 12.6357C4.51886 13.1378 4.53157 13.6331 4.55628 14.1199C3.60086 14.7079 1.1946 16.3101 0.431217 17.9629C-0.539022 20.0634 0.431217 23.7899 0.431217 23.7899L0.544685 23.6875C1.22832 21.2139 3.07363 19.1548 5.52771 18.0092C5.9034 20.0759 6.53398 21.8373 7.32923 23.0861H12.9791C13.7567 21.8651 14.3768 20.1541 14.7552 18.1467C17.0678 19.3153 18.7981 21.3098 19.4553 23.6875L19.5688 23.7899C19.5688 23.7899 20.539 20.0634 19.5688 17.9629C18.8054 16.3101 16.3991 14.7079 15.4437 14.1199ZM12 7.20056C12 8.30513 11.1046 9.20056 10 9.20056C8.89543 9.20056 8 8.30513 8 7.20056C8 6.09599 8.89543 5.20056 10 5.20056C11.1046 5.20056 12 6.09599 12 7.20056ZM8 28.5466C8 27.1859 8.34573 25.9853 8.87254 25.2712H11.1275C11.6543 25.9853 12 27.1859 12 28.5466C12 30.7364 11.1046 32.5116 10 32.5116C8.89543 32.5116 8 30.7364 8 28.5466Z" fill="#fff"/>
+                           </svg>
+                           Features
+                        </div>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <main class="width-100 ">
+               <div class="flex   justify-space-between align-center sticky-top2 header ">
+                  <div class="flex  align-center   ">
+                     <h1 class="no-margin margin-right-big">Institutions</h1>
+                     <button class="primary">Create</button>
+                  </div>
+                  <div class="flex">
+                     <div class="search  margin-right-big ">
+                        <input type="text" class="input-icon mediumr" placeholder="Search">
+                     </div>
+                     <div>
+                        <button class="secondary filtering ">
+                           <svg class="brand-black tiny" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M32.7851 1.55733C32.4068 0.597334 31.6058 0 30.695 0H3.30137C2.39061 0 1.58955 0.597334 1.21017 1.55733C0.834206 2.50933 0.964478 3.59733 1.54956 4.39467L1.5507 4.396L12.4272 19.1613V30.6667C12.4272 31.1587 12.6592 31.6107 13.0306 31.8427C13.1997 31.948 13.3849 32 13.57 32C13.7917 32 14.0122 31.924 14.2042 31.776L21.0606 26.4427C21.3783 26.1947 21.5691 25.7787 21.5691 25.3333V19.1613L32.4468 4.396C33.0319 3.59733 33.1622 2.50933 32.7851 1.55733Z" fill="black"/>
+                           </svg>
+                           Filter (1)
+                        </button>
+                        <div class="content ">
+                           <div class="card">
+                              <div class="filters3 subgrid3-equal   " >
+                                 <div class="margin-right-big">
+                                    <h4 class="no-margin" >Account types</h4>
+                                    <ul>
+                                       <li>
+                                          <div class="">
+                                             <label class="container flex align-center">
+                                                <div>Business</div>
+                                                <div> <input type="checkbox">
+                                                   <span class="checkmark"></span>
+                                                </div>
+                                             </label>
+                                          </div>
+                                          <div class="">
+                                             <label class="container flex align-center">
+                                                <div>Corporate</div>
+                                                <div> <input type="checkbox">
+                                                   <span class="checkmark"></span>
+                                                </div>
+                                             </label>
+                                          </div>
+                                          <div class="">
+                                             <label class="container flex align-center">
+                                                <div>Personal</div>
+                                                <div> <input type="checkbox">
+                                                   <span class="checkmark"></span>
+                                                </div>
+                                             </label>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="margin-right-big">
+                                    <h4 class="no-margin">Countries</h4>
+                                    <ul class="">
+                                       <li>
+                                          <div >
+                                             <button class="secondary width-100" id="btn">
+                                                <svg class="earth tiny" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path d="M12.1787 5.28796V5.31496L12.1947 5.29496L12.1787 5.28796Z"/>
+                                                   <path d="M14.624 0.0279541C6.81303 0.0279541 0.457031 6.38295 0.457031 14.195C0.457031 22.007 6.81303 28.362 14.624 28.362C22.436 28.362 28.792 22.008 28.792 14.195C28.792 6.38295 22.436 0.0279541 14.624 0.0279541ZM27.567 14.195C27.567 14.443 27.545 14.685 27.53 14.93C27.439 14.7 27.301 14.4 27.268 14.271C27.22 14.075 26.927 13.392 26.927 13.392C26.927 13.392 26.634 13.002 26.439 12.904C26.245 12.806 26.098 12.562 25.756 12.368C25.414 12.172 25.269 12.075 24.977 12.075C24.683 12.075 24.392 11.684 24.049 11.489C23.707 11.295 23.659 11.392 23.659 11.392C23.659 11.392 24.049 11.977 24.049 12.123C24.049 12.269 24.487 12.513 24.928 12.415C24.928 12.415 25.22 12.952 25.366 13.098C25.512 13.244 25.317 13.391 25.025 13.586C24.732 13.78 24.781 13.732 24.633 13.878C24.487 14.024 24 14.27 23.853 14.366C23.707 14.463 23.122 14.756 22.83 14.463C22.687 14.322 22.731 14.025 22.635 13.829C22.537 13.634 21.513 12.122 21.025 11.44C20.94 11.32 20.732 10.95 20.587 10.855C20.441 10.756 20.929 10.756 20.929 10.756C20.929 10.756 20.929 10.414 20.88 10.171C20.83 9.92695 20.929 9.58595 20.929 9.58595C20.929 9.58595 20.441 9.87795 20.293 9.97595C20.148 10.074 20.001 9.78195 19.807 9.53695C19.612 9.29395 19.416 8.99995 19.368 8.75595C19.319 8.51295 19.612 8.41495 19.612 8.41495L20.05 8.17195C20.05 8.17195 20.587 8.07495 20.929 8.12295C21.27 8.17195 21.806 8.22095 21.806 8.22095C21.806 8.22095 21.952 7.87895 21.757 7.73295C21.563 7.58695 21.122 7.34295 20.927 7.39195C20.733 7.43995 21.024 7.14795 21.267 6.95295L20.727 6.85495C20.727 6.85495 20.236 7.09895 20.089 7.14795C19.943 7.19595 19.689 7.29395 19.493 7.53795C19.299 7.78195 19.571 8.12295 19.376 8.22095C19.182 8.31895 19.05 8.36695 18.903 8.41495C18.757 8.46395 18.293 8.41495 18.293 8.41495C17.789 8.41495 18.112 8.87495 18.243 9.03795L17.853 8.56195L17.564 7.87995C17.564 7.87995 17.148 7.58795 16.953 7.49095C16.758 7.39295 16.157 7.05195 16.157 7.05195L16.199 7.49095L16.764 8.06295L16.814 8.07595L17.108 8.46595L16.459 8.51495V8.12895C15.847 7.98095 16.007 7.82895 15.938 7.78195C15.793 7.68495 15.454 7.43995 15.454 7.43995C15.454 7.43995 14.88 7.53795 14.733 7.58695C14.586 7.63595 14.545 7.78195 14.254 7.87895C13.96 7.97695 13.828 8.12295 13.731 8.26895C13.634 8.41495 13.316 8.85395 13.123 9.04895C12.927 9.24495 12.565 9.19495 12.419 9.19495C12.272 9.19495 11.568 8.99995 11.568 8.99995V8.17295C11.568 8.17295 11.663 7.70895 11.615 7.56295L12.042 7.49095L12.755 7.34395L12.964 7.19695L13.264 6.80695C13.264 6.80695 12.927 6.56295 13.17 6.22195C13.287 6.05795 13.708 6.02695 13.903 5.88095C14.097 5.73495 14.392 5.63695 14.392 5.63695C14.392 5.63695 14.734 5.34495 15.075 5.00295C15.075 5.00295 15.319 4.85595 15.611 4.75795C15.611 4.75795 16.441 5.48995 16.588 5.48995C16.735 5.48995 17.271 5.14895 17.271 5.14895C17.271 5.14895 17.417 4.71095 17.369 4.56395C17.32 4.41795 17.076 3.92995 17.076 3.92995C17.076 3.92995 16.93 4.17395 16.784 4.36895C16.638 4.56395 16.54 4.80795 16.54 4.80795C16.54 4.80795 15.857 4.76095 15.809 4.61495C15.759 4.46795 15.663 4.22695 15.613 4.08195C15.566 3.93495 15.175 3.93995 14.884 4.03795C14.59 4.13595 14.931 3.51195 14.931 3.51195C14.931 3.51195 15.225 3.14395 15.419 3.14395C15.613 3.14395 16.054 2.89395 16.247 2.84595C16.443 2.79695 17.03 2.57395 17.272 2.57395C17.516 2.57395 17.809 2.67895 17.956 2.67895C18.103 2.67895 18.687 2.67895 18.687 2.67895L19.71 2.59695C19.71 2.59695 20.589 2.92195 20.295 3.11795C20.295 3.11795 20.638 3.32895 20.784 3.47495C20.921 3.61295 21.275 3.34795 21.478 3.23495C25.127 5.52495 27.567 9.57595 27.567 14.195ZM4.29603 6.56295C4.29603 6.75795 4.03003 6.80495 4.29603 7.29495C4.63603 7.92895 4.34403 8.22195 4.34403 8.22195C4.34403 8.22195 3.51403 8.80695 3.36803 8.90495C3.22203 9.00295 2.83203 9.53895 3.07503 9.39195C3.31903 9.24595 3.61103 9.09995 3.36803 9.48995C3.12403 9.88095 2.68503 10.514 2.58803 10.759C2.49103 11.004 2.00303 11.588 2.00303 11.881C2.00303 12.174 1.80803 12.76 1.85703 13.004C1.89003 13.174 1.78203 13.675 1.69703 13.881C1.76303 11.139 2.68603 8.61195 4.21003 6.54495C4.26003 6.54995 4.29603 6.56295 4.29603 6.56295ZM5.86303 4.69295C7.05603 3.59195 8.45403 2.71395 9.99603 2.11995C9.84403 2.31495 9.66003 2.51495 9.66003 2.51495C9.66003 2.51495 9.31903 2.51395 8.68403 3.19795C8.05103 3.88095 8.19703 3.68595 8.05103 3.87995C7.90503 4.07395 7.95303 4.12395 7.61103 4.36895C7.27103 4.61195 7.12403 4.90495 7.12403 4.90495L6.58703 5.09995L6.14903 4.90495C6.14903 4.90495 5.75703 5.05195 5.80603 4.85595C5.82003 4.80395 5.84103 4.74995 5.86303 4.69295ZM11.709 5.83095L11.515 5.53895L11.709 5.09995L12.179 5.28795V4.41695L12.628 4.17395L13.001 4.70995L13.575 5.34495L13.194 5.63695L12.178 5.83195V5.31495L11.709 5.83095ZM18.051 10.416C18.165 10.326 18.538 10.562 18.538 10.562C18.538 10.562 19.757 10.806 19.952 10.952C20.148 11.099 20.489 11.197 20.587 11.344C20.685 11.49 21.025 11.929 21.073 12.075C21.123 12.221 21.367 12.759 21.416 12.953C21.465 13.148 21.611 13.636 21.757 13.88C21.903 14.125 22.733 15.197 23.025 15.685L23.905 15.539C23.905 15.539 23.806 15.977 23.709 16.124C23.612 16.27 23.319 16.66 23.173 16.855C23.026 17.05 22.832 17.343 22.539 17.586C22.247 17.829 22.245 18.073 22.1 18.269C21.954 18.464 21.758 18.903 21.758 18.903C21.758 18.903 21.856 19.879 21.904 20.074C21.952 20.269 21.563 20.805 21.563 20.805L21.123 21.245L20.535 22.024L20.583 22.755C20.583 22.755 20.139 23.098 19.894 23.292C19.652 23.486 19.69 23.633 19.495 23.829C19.301 24.023 18.538 24.365 18.343 24.414C18.148 24.463 17.072 24.609 17.072 24.609V24.171L17.05 23.683C17.05 23.683 16.902 23.098 16.755 22.903C16.608 22.708 16.672 22.414 16.428 22.171C16.184 21.927 16.094 21.733 16.045 21.585C15.996 21.439 16.098 21.001 16.098 21.001C16.098 21.001 16.295 20.464 16.392 20.269C16.49 20.074 16.393 19.782 16.295 19.586C16.197 19.39 16.15 18.902 16.15 18.757C16.15 18.611 15.758 18.366 15.612 18.22C15.466 18.074 15.515 17.878 15.515 17.685C15.515 17.488 15.369 17.05 15.417 16.708C15.466 16.367 14.979 16.61 14.686 16.708C14.393 16.806 14.199 16.61 14.199 16.317C14.199 16.024 13.663 16.269 13.321 16.463C12.978 16.658 12.589 16.658 12.197 16.805C11.808 16.951 11.614 16.659 11.614 16.659C11.614 16.659 11.271 16.367 11.029 16.22C10.784 16.074 10.54 15.782 10.344 15.538C10.15 15.293 9.66103 14.561 9.61403 14.27C9.56503 13.976 9.61403 13.78 9.61403 13.439C9.61403 13.098 9.61403 12.903 9.66203 12.659C9.71103 12.415 9.85703 12.122 10.004 11.878C10.15 11.634 10.687 11.342 10.832 11.244C10.978 11.147 11.32 10.855 11.32 10.659C11.32 10.464 11.516 10.367 11.612 10.171C11.711 9.97595 12.052 9.48895 12.491 9.68395C12.491 9.68395 12.88 9.63595 13.026 9.58695C13.172 9.53795 13.562 9.39295 13.755 9.29495C13.95 9.19695 14.436 9.15095 14.436 9.15095C14.436 9.15095 14.82 9.30395 14.966 9.30395C15.112 9.30395 15.588 9.21895 15.588 9.21895C15.588 9.21895 15.808 9.92595 15.808 10.073C15.808 10.22 15.954 10.365 16.199 10.463C16.44 10.562 17.563 10.807 18.051 10.416ZM23.66 19.977C23.66 20.123 23.611 20.514 23.562 20.709C23.511 20.904 23.415 21.246 23.367 21.439C23.318 21.635 23.074 22.025 22.929 22.123C22.783 22.221 22.538 22.514 22.393 22.562C22.247 22.611 22.148 22.22 22.197 22.025C22.247 21.83 22.49 21.294 22.49 21.294C22.49 21.294 22.539 21.002 22.587 20.806C22.637 20.612 23.222 20.368 23.222 20.368L23.613 19.636C23.611 19.635 23.66 19.832 23.66 19.977ZM2.01503 17.071C2.07803 17.087 2.16803 17.133 2.29503 17.246C2.47903 17.406 2.58803 17.488 2.83203 17.587C3.07503 17.686 3.17303 17.83 3.46603 17.977C3.75903 18.124 3.66203 18.027 4.05103 18.465C4.44203 18.903 4.39303 18.903 4.49003 19.148C4.58703 19.393 4.73403 19.635 4.83203 19.783C4.93003 19.929 5.22203 20.026 5.36803 20.124C5.51403 20.222 5.75803 20.319 5.90403 20.319C6.05103 20.319 6.49003 20.758 6.73403 20.806C6.97803 20.856 6.97803 21.344 6.97803 21.344L6.73403 22.026L6.53803 22.757L6.73403 23.342C6.73403 23.342 6.44003 23.587 6.24703 23.587C6.06703 23.587 6.00603 23.701 5.80903 23.647C3.94903 21.91 2.60003 19.638 2.01503 17.071Z" fill="black"/>
+                                                </svg>
+                                                Select countries
+                                             </button>
+                                          </div>
+                                          <!--dropdown-->
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="margin-right-big">
+                                    <h4 class="no-margin">Environments</h4>
+                                    <ul class="">
+                                       <li>
+                                          <select class="width-100">
+                                             <option value="1">All environments</option>
+                                             <option value="2">Production</option>
+                                             <option value="3">Sandbox</option>
+                                             <option value="3">Preconfigured Sandbox</option>
+                                          </select>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="filters3 subgrid3-equal  " >
+                                 <div class="margin-right-big">
+                                    <h4 class="no-margin">Payment features</h4>
+                                    <ul class="">
+                                       <li>
+                                          <div class="">
+                                             <label class="container flex align-center">
+                                                <div>Batch/Bulk</div>
+                                                <div> <input type="checkbox">
+                                                   <span class="checkmark"></span>
+                                                </div>
+                                             </label>
+                                          </div>
+                                          <div class="">
+                                             <label class="container flex align-center">
+                                                <div>Domestic</div>
+                                                <div> <input type="checkbox">
+                                                   <span class="checkmark"></span>
+                                                </div>
+                                             </label>
+                                          </div>
+                                          <div class="">
+                                             <label class="container flex align-center">
+                                                <div>International</div>
+                                                <div> <input type="checkbox">
+                                                   <span class="checkmark"></span>
+                                                </div>
+                                             </label>
+                                          </div>
+                                          <div class="">
+                                             <label class="container flex align-center">
+                                                <div>SEPA Instant</div>
+                                                <div> <input type="checkbox">
+                                                   <span class="checkmark"></span>
+                                                </div>
+                                             </label>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="margin-right-big">
+                                    <h4 class="no-margin">Registration </h4>
+                                    <ul class="">
+                                       <li>
+                                          <div class="">
+                                             <label class="container flex align-center">
+                                                <div>Registration type XX</div>
+                                                <div> <input type="checkbox">
+                                                   <span class="checkmark"></span>
+                                                </div>
+                                             </label>
+                                          </div>
+                                          <div class="">
+                                             <label class="container flex align-center">
+                                                <div>Registration type XX</div>
+                                                <div> <input type="checkbox">
+                                                   <span class="checkmark"></span>
+                                                </div>
+                                             </label>
+                                          </div>
+                                          <div class="">
+                                             <label class="container flex align-center">
+                                                <div>Registration type XX</div>
+                                                <div> <input type="checkbox">
+                                                   <span class="checkmark"></span>
+                                                </div>
+                                             </label>
+                                          </div>
+                                          <div class="">
+                                             <label class="container flex align-center">
+                                                <div>Registration type XX</div>
+                                                <div> <input type="checkbox">
+                                                   <span class="checkmark"></span>
+                                                </div>
+                                             </label>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div>
+                                    <h4 class="no-margin">Features</h4>
+                                    <ul class="">
+                                       <li>
+                                          <div class="">
+                                             <label class="container flex align-center">
+                                                <div>AIS</div>
+                                                <div> <input type="checkbox">
+                                                   <span class="checkmark"></span>
+                                                </div>
+                                             </label>
+                                          </div>
+                                          <div class="">
+                                             <label class="container flex align-center">
+                                                <div>PIS</div>
+                                                <div> <input type="checkbox">
+                                                   <span class="checkmark"></span>
+                                                </div>
+                                             </label>
+                                          </div>
+                                          <div class="">
+                                             <label class="container flex align-center">
+                                                <div>Transfer</div>
+                                                <div> <input type="checkbox">
+                                                   <span class="checkmark"></span>
+                                                </div>
+                                             </label>
+                                          </div>
+                                          <div class="">
+                                             <label class="container flex align-center">
+                                                <div>SO</div>
+                                                <div> <input type="checkbox">
+                                                   <span class="checkmark"></span>
+                                                </div>
+                                             </label>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class=" margin-bottom-big">
+                                    <h4 class="">Brands/Institutions Groups</h4>
+                                    <button class="secondary width-100">
+                                       <div class="flex align-center justify-center">
+                                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="margin-right-normal tiny">
+                                             <rect y="14.2222" width="9.10345" height="9.77781" rx="1" fill="black"/>
+                                             <rect x="14.8965" y="14.2222" width="9.10345" height="9.77781" rx="1" fill="black"/>
+                                             <rect x="7.44922" width="9.10345" height="9.77781" rx="1" fill="black"/>
+                                          </svg>
+                                          Brands (1)
+                                       </div>
+                                    </button>
+                                 </div>
+                              </div>
+                              <div class="action-area flex align-center">
+                                 <a href="" class="margin-right-huge">Clear filters </a>   <button class="primary">Apply filters </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="subnavMenu">
+                     <div class="dropdown-nav ">
+                        <a href="">Matt Richards &#9662;</a>
+                        <div class="dropdown-content">
+                           <a href="login-labelling.html">Logout</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="padding-around2">
+                  <div class="margin-bottom-normal"><a href="" >Clear filters (1)</a></div>
+                  <!--end of filters-->
+                  <div class=" table">
+                     <div class="flex align-center margin-bottom-normal ">
+                        <div class="flex align-center ">
+                           <h2 class="no-margin margin-right-big ">2 Selected</h2>
+                           <button class="secondary margin-right-huge">Add to application</button>
+                        </div>
+                     </div>
+                     <table  id="myTable2">
+                        <tr class="fixed-header">
+                           <th><a href="">Select all</a> </th>
+                           <th>Brand</th>
+                           <th>Logo</th>
+                           <th>Name</th>
+                           <th>Countries</th>
+                           <th>AIS</th>
+                           <th>PIS</th>
+                           <th>Transfer</th>
+                           <th>SO</th>
+                           <th>Live </th>
+                           <th>Sandbox</th>
+                           <th>Preconfigured</th>
+                           <th>Registration</th>
+                        </tr>
+                        <tr class="">
+                           <td><label class="container ">
+                              <input type="checkbox" name="" checked >
+                              <span class="checkmark"></span></br>
+                              </label>
+                           </td>
+                           <td><a href="">Allied Irish Group</a></td>
+                           <td><img src="img/aib.png" alt="Allied Irish Bank Business"  class="medium2"></td>
+                           <td><a href="">Allied Irish Bank (ROI)</a></td>
+                           <td>
+                              🇮🇪 Ireland
+                           </td>
+                           <td>
+                              ✅
+                           </td>
+                           <td>
+                           </td>
+                           <td>
+                           </td>
+                           <td>
+                           </td>
+                           <td>
+                              aibgb
+                           </td>
+                           <td>
+                              aibgb-sandbox
+                           </td>
+                           <td>
+                           </td>
+                           <td>
+                              No
+                           </td>
+                        </tr>
+                        <tr class="">
+                           <td><label class="container ">
+                              <input type="checkbox" name="" checked>
+                              <span class="checkmark"></span></br>
+                              </label>
+                           </td>
+                           <td><a href="">Allied Irish Group</a></td>
+                           <td><img src="img/aib.png" alt="Allied Irish Bank Business"  class="medium2"></td>
+                           <td><a href="">	Allied Irish Bank Business</a></td>
+                           <td>
+
+                              <div class="tooltip2 ">
+                                 <div class="tag "><a href="">🌎 64 Countries</a></div>
+
+                                 <div class="tooltiptext2 flex 	 width-100">
+
+                                    <!--end of list-->
+                                    <div  class=" margin-right-normal" >
+                                       <ul class="list-of-countries">
+                                         <li>🏳 United Kingdom</li>
+                                          <li>🏳 Country</li>
+                                         <li>🏳 Country</li>
+                                         <li>🏳 Country</li>
+                                         <li>🏳 Country</li>
+                                         <li>🏳 Country</li>
+                                         <li>🏳 Country</li>
+                                         <li>🏳 Country</li>
+
+                                       </ul>
+                                    </div>
+
+                                    <div  class="margin-right-normal" >
+                                       <ul class="list-of-countries">
+                                          <li>🏳 Country</li>
+                                            <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+
+                                       </ul>
+                                    </div>
+                                    <div  class="margin-right-normal" >
+                                       <ul class="list-of-countries">
+                                          <li>🏳 Country</li>
+                                            <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+
+                                       </ul>
+                                    </div>
+                                    <div  class="margin-right-normal" >
+                                       <ul class="list-of-countries">
+                                          <li>🏳 Country</li>
+                                            <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+                                          <li>🏳 Country</li>
+
+                                       </ul>
+                                       </div>
+
+
+                                       <div  class=" margin-right-normal" >
+                                          <ul class="list-of-countries">
+                                            <li>🏳 United Kingdom</li>
+                                             <li>🏳 Country</li>
+                                            <li>🏳 Country</li>
+                                            <li>🏳 Country</li>
+                                            <li>🏳 Country</li>
+                                            <li>🏳 Country</li>
+                                            <li>🏳 Country</li>
+                                            <li>🏳 Country</li>
+
+                                          </ul>
+                                       </div>
+
+                                       <div  class="margin-right-normal" >
+                                          <ul class="list-of-countries">
+                                             <li>🏳 Country</li>
+                                               <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+
+                                          </ul>
+                                       </div>
+                                       <div  class="margin-right-normal" >
+                                          <ul class="list-of-countries">
+                                             <li>🏳 Country</li>
+                                               <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+
+                                          </ul>
+                                       </div>
+                                       <div  class="margin-right-normal" >
+                                          <ul class="list-of-countries">
+                                             <li>🏳 Country</li>
+                                               <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+                                             <li>🏳 Country</li>
+
+                                          </ul>
+                                          </div>
+
+                                    </div>
+
+
+                                    <!--end of list-->
+
+                                   </div>
+                              </div>
+                           </td>
+                           <td>
+                              ✅
+                           </td>
+                           <td>
+                           </td>
+                           <td>
+                           </td>
+                           <td>
+                           </td>
+                           <td>
+                              aibgb-uk
+                           </td>
+                           <td>
+                              aibgb-sandbox
+                           </td>
+                           <td>
+                           </td>
+                           <td>
+                              No
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </main>
+         </div>
+      </div>
+      <script>
+         const Yapily = {};
+      </script>
+      <script src="js/modal.js"></script>
+      <script src="js/index5.js"></script>
+      <script>
+         var acc = document.getElementsByClassName("filtering");
+         var i;
+
+         for (i = 0; i < acc.length; i++) {
+           acc[i].addEventListener("click", function() {
+             this.classList.toggle("active6");
+             var content = this.nextElementSibling;
+             if (content.style.maxHeight) {
+               content.style.maxHeight = null;
+             } else {
+               content.style.maxHeight = content.scrollHeight + "px";
+             }
+           });
+         }
+      </script>
+   </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="robots" content="noindex">
+      <title>gpay</title>
+      <link rel="stylesheet" type="text/css" href="yapilyui.css">
+      <link rel="shortcut icon" href="icons/icon-48x48.png">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8">
+   </head>
+   <body class="fixed-width-admin gpay" >
+
+      <div class="  ">
+
+         <header id="top" class="">
+           <div class="wrapper flex justify-space-between align-center margin-bottom-big width-100">
+              <div class="gpaylogo">
+                <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M47.2933 19.4003V31.0403H43.6006V2.29472H53.3942C54.5632 2.2703 55.7255 2.47763 56.814 2.90475C57.9025 3.33187 58.8956 3.97033 59.736 4.78327C60.5849 5.54685 61.2605 6.4833 61.7175 7.52969C62.1744 8.57607 62.4021 9.70815 62.3851 10.8498C62.4094 11.9976 62.1853 13.1371 61.728 14.1901C61.2708 15.2432 60.5913 16.1849 59.736 16.9508C58.0235 18.5838 55.9095 19.3996 53.3942 19.398H47.2933V19.4003ZM47.2933 5.83373V15.8682H53.486C54.1649 15.8883 54.8405 15.7665 55.4696 15.5106C56.0988 15.2547 56.6676 14.8703 57.1397 14.382C57.6093 13.9254 57.9826 13.3793 58.2375 12.7759C58.4924 12.1726 58.6237 11.5243 58.6237 10.8693C58.6237 10.2143 58.4924 9.56602 58.2375 8.96268C57.9826 8.35934 57.6093 7.81324 57.1397 7.35668C56.6735 6.85807 56.1067 6.46423 55.4768 6.20128C54.8469 5.93833 54.1683 5.81226 53.486 5.83144H47.2933V5.83373Z" fill="#6A6A6A"/>
+            <path d="M70.8942 10.7305C73.6236 10.7305 75.778 11.4598 77.3576 12.9186C78.9371 14.3773 79.7261 16.3773 79.7245 18.9186V31.0402H76.1924V28.3109H76.0319C74.5028 30.5586 72.4692 31.6824 69.9309 31.6824C67.7642 31.6824 65.9515 31.0402 64.4928 29.7558C63.7928 29.1663 63.2331 28.428 62.8545 27.5948C62.476 26.7615 62.2882 25.8543 62.3047 24.9393C62.3047 22.9041 63.0738 21.2856 64.6121 20.0837C66.1503 18.8819 68.2038 18.2794 70.7727 18.2764C72.9653 18.2764 74.7712 18.6778 76.1901 19.4805V18.6365C76.1943 18.0127 76.0596 17.3957 75.7958 16.8304C75.532 16.2651 75.1457 15.7656 74.6649 15.3681C73.6884 14.4871 72.4158 14.0064 71.1006 14.0218C69.0379 14.0218 67.4057 14.8918 66.2038 16.6319L62.9515 14.5837C64.7405 12.0149 67.3881 10.7305 70.8942 10.7305ZM66.1167 25.0196C66.1142 25.4895 66.2241 25.9533 66.4371 26.3722C66.6501 26.7911 66.9602 27.153 67.3414 27.4278C68.1581 28.0702 69.1718 28.4106 70.2107 28.3911C71.769 28.3885 73.2627 27.7683 74.3644 26.6664C75.5877 25.515 76.1993 24.164 76.1993 22.6136C75.0479 21.6961 73.4424 21.2374 71.3828 21.2374C69.8827 21.2374 68.632 21.599 67.6304 22.3223C66.619 23.0562 66.1167 23.9484 66.1167 25.0196V25.0196Z" fill="#6A6A6A"/>
+            <path d="M99.9999 11.3728L87.6695 39.7101H83.8576L88.4333 29.7949L80.3254 11.3728H84.3392L90.1994 25.5013H90.2796L95.9792 11.3728H99.9999Z" fill="#6A6A6A"/>
+            <path d="M32.3708 16.8911C32.3722 15.7658 32.2771 14.6424 32.0864 13.5333H16.5129V19.8935H25.4327C25.2502 20.9093 24.8639 21.8776 24.297 22.7401C23.7302 23.6025 22.9946 24.3413 22.1345 24.9118V29.0403H27.458C30.575 26.1664 32.3708 21.9164 32.3708 16.8911Z" fill="#4285F4"/>
+            <path d="M16.513 33.0289C20.9694 33.0289 24.7218 31.5656 27.458 29.0426L22.1346 24.9141C20.6529 25.9187 18.7447 26.4921 16.513 26.4921C12.2056 26.4921 8.54963 23.5884 7.24228 19.6756H1.7583V23.9302C3.13278 26.6652 5.24038 28.9645 7.84582 30.5711C10.4513 32.1778 13.452 33.0287 16.513 33.0289V33.0289Z" fill="#34A853"/>
+            <path d="M7.24241 19.6755C6.55127 17.6252 6.55127 15.4048 7.24241 13.3544V9.09979H1.75843C0.602178 11.4006 0 13.94 0 16.515C0 19.09 0.602178 21.6293 1.75843 23.9302L7.24241 19.6755Z" fill="#FBBC04"/>
+            <path d="M16.513 6.53782C18.868 6.49935 21.1436 7.38915 22.8479 9.0149L27.5612 4.30157C24.5725 1.49439 20.6131 -0.0468046 16.513 0.00108346C13.452 0.00122297 10.4513 0.852132 7.84582 2.45881C5.24038 4.06549 3.13278 6.36471 1.7583 9.09976L7.24228 13.3544C8.54963 9.44151 12.2056 6.53782 16.513 6.53782Z" fill="#EA4335"/>
+            </svg>
+
+
+              </div>
+
+
+          </div>
+
+         </header>
+
+
+
+
+
+         <div class="  gpay wrapper-main   ">
+           <div class="">
+              <h1 class="margin-top-big ">Select your bank</h1>
+              <div class="select-institutions">
+                <!--
+                 <form>
+                    <div class="search">
+                       <input type="text" placeholder="Search" id="input-search" class="width-100 margin-bottom-big input-icon">
+                    </div>
+                 </form>-->
+                 <div class="institutions-container gpaybanks subgrid3-equal">
+                    <div class="select-institution-container">
+                       <a href="gpay3.html">
+                          <div class="listed-institution ">
+                             <div class="institution-apps-name-logo2">
+                                <img src="img/aib.png"  class=""><small>Allied Irish Bank</small>
+                             </div>
+                          </div>
+                       </a>
+                    </div>
+                    <!--end institution-->
+                    <div class="select-institution-container">
+                       <a href="gpay3.html">
+                          <div class="listed-institution">
+                             <div class="institution-apps-name-logo2">
+                                <img src="img/boi.png" alt="logo-Monzo" class=""><small>Bank of Ireland (UK)</small>
+                             </div>
+                          </div>
+                       </a>
+                    </div>
+                    <!--end institution-->
+                    <div class="select-institution-container">
+                       <a href="gpay3.html">
+                          <div class="listed-institution ">
+                             <div class="institution-apps-name-logo2">
+                                <img src="img/barclays.png" alt="logo-Monzo" class=""><small> Barclays</small>
+                             </div>
+                          </div>
+                       </a>
+                    </div>
+                    <!--end institution-->
+                    <div class="select-institution-container">
+                       <a href="gpay3.html">
+                          <div class="listed-institution ">
+                             <div class="institution-apps-name-logo2">
+                                <img src="img/hsbc.png" alt="logo-Monzo" class=""><small> HSBC</small>
+                             </div>
+                          </div>
+                       </a>
+                    </div>
+                    <!--end institution-->
+                    <div class="select-institution-container">
+                       <a href="gpay3.html">
+                          <div class="listed-institution ">
+                             <div class="institution-apps-name-logo2">
+                                <img src="img/lloyds.png" alt="logo-Monzo" class=""><small> Lloyds</small>
+                             </div>
+                          </div>
+                       </a>
+                    </div>
+                    <!--end institution-->
+                    <div class="select-institution-container ">
+                       <a href="gpay3.html">
+                          <div class="listed-institution ">
+                             <div class="institution-apps-name-logo2">
+                                <img src="img/nationwide.png" alt="logo-Monzo" class=""><small>Nationwide Building Society</small>
+                             </div>
+                          </div>
+                       </a>
+                    </div>
+                    <!--end institution-->
+                    <div class="select-institution-container ">
+                       <a href="gpay3.html">
+                          <div class="listed-institution ">
+                             <div class="institution-apps-name-logo2">
+                                <img src="img/monzo.png" alt="logo-Monzo" class=""><small>Monzo</small>
+                             </div>
+                          </div>
+                       </a>
+                    </div>
+                    <!--end institution-->
+                    <div class="select-institution-container ">
+                       <a href="gpay3.html">
+                          <div class="listed-institution ">
+                             <div class="institution-apps-name-logo2">
+                                <img src="img/rbs.png" alt="logo-Monzo" class=""><small>The Royal Bank of Scotland</small>
+                             </div>
+                          </div>
+                       </a>
+                    </div>
+                    <div class="select-institution-container ">
+                       <a href="gpay3.html">
+                          <div class="listed-institution ">
+                             <div class="institution-apps-name-logo2">
+                                <img src="img/santander.png" alt="logo-Monzo" class=""><small>Santander UK</small>
+                             </div>
+                          </div>
+                       </a>
+                    </div>
+
+                    <!--end institution-->
+                 </div>
+              </div>
+              <!--end institutio container-->
+           </div>
+
+
+
+         </div>
+
+
+      </div>
+   </body>
+
+</html>

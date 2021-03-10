@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Yapily Design System</title>
+      <link rel="stylesheet" type="text/css" href="yapilyui.css">
+      <link rel="shortcut icon" href="icons/icon-48x48.png">
+        <script type="text/javascript" async="" src="js/dropdown-search.js"></script>
+      <script type="text/javascript" async="" src="js/select.js"></script>
+      <script type="text/javascript" async="" src="js/accordion.js"></script>
+      <script type="text/javascript" async="" src="js/sortable.js"></script>
+      <script type="text/javascript" async="" src="js/tabs.js"></script>
+      <script type="text/javascript" async="" src="js/modal.js"></script>
+      <script type="text/javascript" async="" src="js/password.js"></script>
+      <script type="text/javascript" async="" src="js/loading-bar.js"></script>
+        <script type="text/javascript" async="" src="js/search-table.js"></script>
+
+      <meta charset="utf-8">
+   </head>
+   <body class="fixed-width grid" >
+      <header id="top" class="subgrid3">
+         <div class="isologo">
+            <svg width="171" height="29" viewBox="0 0 171 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <g clip-path="url(#clip0)">
+                  <path d="M51.2952 13.9202L45.8099 4.47302H41.9043L49.3999 18.1423V24.5734H53.2484V17.9981L60.5692 4.47302H56.6926L51.2952 13.9202Z" />
+                  <path d="M74.1762 4.47278L65.3594 24.5732H69.352L71.1321 20.3247H80.952L82.7329 24.5732H86.868L78.1671 4.47278H74.1762ZM72.5104 17.0204L76.0706 8.57969L79.5736 17.0204H72.5104Z" />
+                  <path d="M109.336 6.28272C107.948 5.07666 105.991 4.47278 103.463 4.47278H95.2227V24.5732H99.0711V18.6572H103.463C105.991 18.6572 107.948 18.0226 109.336 16.7492C110.724 15.4757 111.417 13.6914 111.417 11.3944C111.417 9.1921 110.724 7.48878 109.336 6.28272ZM106.609 14.3225C105.832 14.9537 104.718 15.2702 103.262 15.2702H99.0711V7.83251H103.262C104.718 7.83251 105.832 8.13872 106.609 8.75113C107.384 9.3644 107.77 10.283 107.77 11.5087C107.771 12.7531 107.384 13.6905 106.609 14.3225Z" />
+                  <path d="M123.709 4.47278H119.861V24.5723H123.709V4.47278Z" />
+                  <path d="M138.352 4.47278H134.506V24.5732H147.024V21.0983H138.352V4.47278Z" />
+                  <path d="M166.359 4.47278L160.96 13.92L155.475 4.47278H151.571L159.066 18.142V24.5732H162.914V17.9987L170.236 4.47278H166.359Z" />
+                  <path d="M24.4686 0.0479561C21.8314 0.0837796 19.722 2.25025 19.757 4.88669L19.8005 8.07584C19.8073 8.64049 19.5907 9.18466 19.1975 9.58981L19.0397 9.75187C18.6456 10.1587 18.1049 10.3924 17.5385 10.3992L17.0881 10.4061C17.089 10.4061 17.089 10.4069 17.089 10.4086C16.3427 9.92928 15.4514 9.65463 14.4978 9.66657C13.6806 9.67766 12.9156 9.89772 12.2503 10.2756C12.1027 10.2687 11.9577 10.256 11.8084 10.2577L11.7573 10.2585C11.1935 10.2662 10.6484 10.0504 10.2441 9.65634C9.83644 9.26143 9.60444 8.72151 9.59591 8.15431L9.55156 4.76301C9.51574 2.12657 7.34927 0.0163973 4.71112 0.0513679C2.07383 0.0863385 -0.0363506 2.25366 -0.000527111 4.89096C0.0344435 7.52825 2.20177 9.63757 4.83821 9.6026L8.02736 9.55996C8.592 9.55228 9.13618 9.76893 9.54133 10.163L9.70424 10.3199C10.1102 10.7157 10.3431 11.2573 10.3508 11.8228L10.3576 12.2723C10.3593 12.2715 10.361 12.2706 10.3627 12.2697C10.0403 12.9171 9.86033 13.6472 9.86971 14.4209C9.8825 15.3455 10.1657 16.2035 10.6382 16.9251C10.6374 17.0138 10.628 17.1017 10.628 17.1921L10.6288 17.2424C10.6356 17.807 10.4199 18.3512 10.0258 18.7555C9.63174 19.1641 9.09097 19.3961 8.52462 19.4037L5.13418 19.4481C2.49603 19.4822 0.386708 21.6495 0.421679 24.2877C0.456649 26.9258 2.62483 29.0343 5.26127 28.9993C7.89941 28.9652 10.0087 26.797 9.97291 24.1589L9.93112 20.9706C9.92344 20.4068 10.1401 19.8618 10.5333 19.4566L10.6902 19.2954C11.086 18.8877 11.6259 18.6549 12.1931 18.648L12.6418 18.6421C12.6409 18.6387 12.6384 18.6344 12.6366 18.6301C13.2422 18.9039 13.9144 19.0566 14.6223 19.0464C17.2127 19.0122 19.2836 16.8833 19.2495 14.2938C19.2435 13.8255 19.1668 13.3735 19.0329 12.9487C19.0764 12.5913 19.1054 12.228 19.1011 11.8569V11.8057C19.0943 11.242 19.3101 10.6969 19.7033 10.2926C20.0973 9.88493 20.6381 9.65293 21.2053 9.6444L24.5966 9.60004C27.2339 9.56422 29.3441 7.39775 29.3091 4.7596C29.2733 2.12231 27.1059 0.0112796 24.4686 0.0479561Z" />
+               </g>
+               <defs>
+                  <clipPath id="clip0">
+                     <path d="M0 0H170.588V29H0V0Z" fill="white"/>
+                  </clipPath>
+               </defs>
+            </svg>
+            <!--<span class="staging tiny">STAGING</span>-->
+         </div>
+         <nav>
+            <a href="#" class="current">Patterns</a>
+            <a href="#">Principles</a>
+            <a href="#">Brand</a>
+         </nav>
+         <div class="subnavMenu">
+            <a href="http://yapily.com" target="_blank">Go to yapily.com &nearr; </a>
+         </div>
+      </header>
+      <aside class="card">
+         <a href="#top">Go to top &#8593;</a>
+         <ul class="margin-bottom-9">
+            <li>
+               <h3>Styles</h3>
+               <a href="#colours">Colours</a>
+               <a href="#icons">Iconography</a>
+               <a href="#typography">Typography</a>
+            </li>
+         </ul>
+         <ul class="margin-bottom-9">
+            <li>
+               <h3>Components</h3>
+               <a href="#buttons">Buttons & Links</a>
+               <a href="#breadcrumbs">Breadcrumbs</a>
+               <a href="#cards">Cards</a>
+               <a href="#checkboxes">Checkboxes & Radios</a>
+               <a href="#date">Date & Time</a>
+               <a href="#dropdown">Dropdown</a>
+  <a href="#dropdown-search">Dropdown search</a>
+                      <a href="#navigation">Dropdown navigation</a>
+
+               <a href="#accordion">Expand content</a>
+               <a href="#upload">File upload</a>
+               <a href="#loading">Loading indicators</a>
+               <a href="#modals">Modal</a>
+
+               <a href="#pagination">Pagination</a>
+               <a href="#steps">Steps</a>
+               <a href="#tags">Tags</a>
+               <a href="#tables">Tables</a>
+               <a href="#tabs">Tabs</a>
+               <a href="#text-area">Text area</a>
+               <a href="#text-input">Text input</a>
+               <a href="#tooltips">Tooltips</a>
+            </li>
+         </ul>
+         <ul class="margin-bottom-9">
+            <li>
+               <h3>Patterns</h3>
+               <a href="#institutions">Select institutions</a>
+            </li>
+         </ul>
+      </aside>
+      <main class="card">
+         <div id="colours" class="margin-bottom-10">
+            <h1>Colours</h1>
+            <p class="margin-bottom-9">You must make sure that the contrast ratio of elements meet Level AA of the <a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG 2.1).</a>
+            </p>
+            <h2>Main colours</h2>
+            <div class="margin-bottom-9">
+               <h4>Text</h4>
+               <p >
+                  Black is used for text and actions.
+                  <span class="light-text">Variable name: $text-ac</span>
+               <div class="sample-color text-ac">#000000</div>
+               </p>
+               <p>
+                  Grey is used for lighter-text
+                  <span class="light-text">Variable name: $light-text</span>
+               <div class="sample-color lighter-text">#404B54</div>
+               </p>
+            </div>
+            <div class="margin-bottom-9">
+               <h4>Links</h4>
+               <p>
+                  Blue is used in links.
+                  <span class="light-text">Variable name: $links-colour</span>
+               <div class="sample-color links">#003EB3</div>
+               </p>
+            </div>
+            <div class="margin-bottom-9">
+               <h4>Highlights</h4>
+               <p>
+                  Green is used for positive highlights and alternative backgrounds.
+                  <span class="light-text">Variable name: $brand-color</span>
+               <div class="sample-color brand-color">#0aa851</div>
+               </p>
+            </div>
+            <div class="margin-bottom-9">
+               <h4>Alternative</h4>
+               <p>
+                  Yellow is as alternative brand colour to green.
+                  <span class="light-text">Variable name: $alternative-brand-colour</span>
+               <div class="sample-color alternative-brand">#F9C533</div>
+               </p>
+            </div>
+            <h2>Greyscale </h2>
+            <div class="margin-bottom-9">
+               <h4>Background</h4>
+               <p>
+                  Super light grey is used for backgrounds to give white cards some contrast and table headers.
+                  <span class="light-text">Variable name: $tbh-background-colour</span>
+               <div class="sample-color tbh-background">#F6F7FA</div>
+               </p>
+            </div>
+            <div class="margin-bottom-9">
+               <h4>Table zebra</h4>
+               <p>
+                  Light grey is used for table zebra backounds.
+                  <span class="light-text">Variable name: $tbzebra-colour</span>
+               <div class="sample-color tbzebra">#FAFBFF</div>
+               </p>
+            </div>
+            <div class="margin-bottom-9">
+               <h4>Borders</h4>
+               <p>
+                  Darker grey is used for border colours.
+                  <span class="light-text">Variable name: $tbzebra-colour</span>
+               <div class="sample-color border">#D6E0E9</div>
+               </p>
+            </div>
+            <h2>Extended</h2>
+            <div class="margin-bottom-9">
+               <h4>Errors</h4>
+               <p>
+                  Red is used for errors, alerts and destructive actions.
+                  <span class="light-text">Variable name: $error-colour</span>
+               <div class="sample-color error">#B50500</div>
+               </p>
+               <p>
+                  Super light red is used for errors and alerts backounds.
+                  <span class="light-text">Variable name: $error-bg</span>
+               <div class="sample-color error-bg">#FFF6F6</div>
+               </p>
+            </div>
+            <div class="margin-bottom-9">
+               <h4>Labels, Current & Tags</h4>
+               <p>
+                  Light green, light purple and light yellow are used for tags and labels and to mark the current tab in navs .
+                  <span class="light-text">Variable names: $light-purple, $light-green, $light-yellow </span>
+               <div class="sample-color light-purple">#DEE7F7</div>
+               </p>
+               <p>
+               <div class="sample-color light-green">#D2EBD3</div>
+               </p>
+               <p>
+               <div class="sample-color light-yellow">#FEF1BF</div>
+               </p>
+            </div>
+         </div>
+         <!--end colour-->
+         <div id="icons" class="margin-bottom-10">
+            <h1>Iconography</h1>
+            <p class="margin-bottom-9">Use SVG icons or HTML special characters. Logos should be filled instead of outlines.</p>
+            <div class="icons">
+               <div class="row margin-bottom-9">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo normal">
+                     <path d="M26.7149 0.000520314C23.8356 0.0401149 21.5328 2.43464 21.571 5.34861L21.6184 8.87347C21.6259 9.49756 21.3894 10.099 20.9601 10.5468L20.7878 10.7259C20.3576 11.1756 19.7672 11.4339 19.1489 11.4415L18.6572 11.449C18.6581 11.449 18.6581 11.4499 18.6581 11.4518C17.8433 10.922 16.8702 10.6185 15.8291 10.6317C14.937 10.6439 14.1017 10.8871 13.3754 11.3048C13.2143 11.2972 13.056 11.2831 12.893 11.285L12.8372 11.2859C12.2216 11.2944 11.6266 11.0559 11.1852 10.6203C10.7401 10.1839 10.4868 9.58712 10.4775 8.9602L10.4291 5.21192C10.39 2.29795 8.0247 -0.0343606 5.14447 0.00429122C2.26518 0.0429431 -0.03862 2.43841 0.000490693 5.35333C0.0386702 8.26824 2.40487 10.5996 5.28322 10.561L8.765 10.5138C9.38146 10.5053 9.97557 10.7448 10.4179 11.1803L10.5958 11.3538C11.039 11.7912 11.2932 12.3898 11.3016 13.0149L11.3091 13.5117C11.3109 13.5107 11.3128 13.5098 11.3146 13.5089C10.9627 14.2244 10.7662 15.0314 10.7764 15.8864C10.7904 16.9083 11.0995 17.8567 11.6154 18.6543C11.6145 18.7523 11.6043 18.8494 11.6043 18.9493L11.6052 19.005C11.6126 19.6291 11.377 20.2305 10.9468 20.6774C10.5166 21.1289 9.92622 21.3854 9.3079 21.3938L5.60635 21.4429C2.72613 21.4806 0.423258 23.876 0.461438 26.7919C0.499617 29.7078 2.86674 32.0382 5.7451 31.9995C8.62532 31.9618 10.9282 29.5654 10.8891 26.6495L10.8435 23.1256C10.8351 22.5025 11.0716 21.9001 11.5009 21.4523L11.6722 21.2741C12.1043 20.8235 12.6938 20.5661 13.313 20.5586L13.8028 20.552C13.8019 20.5482 13.7991 20.5435 13.7972 20.5388C14.4584 20.8414 15.1922 21.0101 15.9651 20.9988C18.7932 20.9611 21.0541 18.6081 21.0169 15.746C21.0104 15.2284 20.9266 14.7288 20.7804 14.2593C20.8279 13.8643 20.8595 13.4627 20.8549 13.0526V12.996C20.8474 12.3729 21.083 11.7705 21.5123 11.3236C21.9425 10.873 22.5329 10.6166 23.1521 10.6071L26.8546 10.5581C29.7339 10.5185 32.0377 8.124 31.9995 5.20815C31.9604 2.29323 29.5942 -0.040017 26.7149 0.000520314Z" />
+                  </svg>
+                  <small>.logo</small>
+               </div>
+               <div class="row margin-bottom-9">
+                  <svg  viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="financial normal">
+                     <path d="M16 0.5L29.8564 12.1129H2.14355L16 0.5Z" />
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6788 0.116787C15.8646 -0.038929 16.1354 -0.038929 16.3212 0.116787L30.1776 11.7297C30.3387 11.8647 30.3981 12.0862 30.3263 12.2838C30.2544 12.4814 30.0666 12.6129 29.8564 12.6129H2.14358C1.93333 12.6129 1.74554 12.4814 1.67368 12.2838C1.60183 12.0862 1.66127 11.8647 1.82241 11.7297L15.6788 0.116787ZM16 1.15238L3.51859 11.6129H28.4814L16 1.15238Z" />
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16.0161C8.55228 16.0161 9 16.4638 9 17.0161V25.2742C9 25.8265 8.55228 26.2742 8 26.2742C7.44772 26.2742 7 25.8265 7 25.2742V17.0161C7 16.4638 7.44772 16.0161 8 16.0161Z" />
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16 16.0161C16.5523 16.0161 17 16.4638 17 17.0161V25.2742C17 25.8265 16.5523 26.2742 16 26.2742C15.4477 26.2742 15 25.8265 15 25.2742V17.0161C15 16.4638 15.4477 16.0161 16 16.0161Z" />
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M24 16.0161C24.5523 16.0161 25 16.4638 25 17.0161V25.2742C25 25.8265 24.5523 26.2742 24 26.2742C23.4477 26.2742 23 25.8265 23 25.2742V17.0161C23 16.4638 23.4477 16.0161 24 16.0161Z" />
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 31.5C0 30.9477 0.447715 30.5 1 30.5H31C31.5523 30.5 32 30.9477 32 31.5C32 32.0523 31.5523 32.5 31 32.5H1C0.447715 32.5 0 32.0523 0 31.5Z" />
+                  </svg>
+                  <small>.financial</small>
+               </div>
+               <div class="row margin-bottom-9">
+                  <svg  viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="close-error normal">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM12.2423 10.7573C11.9863 10.7573 11.7304 10.8549 11.5351 11.0502C11.1446 11.4407 11.1446 12.0739 11.5351 12.4644L15.0707 16L11.5352 19.5355C11.1446 19.9261 11.1446 20.5592 11.5352 20.9497C11.9257 21.3403 12.5588 21.3403 12.9494 20.9497L16.4849 17.4142L17.1919 18.1213L17.2024 18.1316L20.0205 20.9497C20.411 21.3402 21.0442 21.3402 21.4347 20.9497C21.8253 20.5592 21.8253 19.926 21.4347 19.5355L17.8992 15.9999L21.4346 12.4645C21.8252 12.0739 21.8252 11.4408 21.4346 11.0502C21.0441 10.6597 20.411 10.6597 20.0204 11.0502L16.485 14.5857L12.9494 11.0502C12.7542 10.8549 12.4982 10.7573 12.2423 10.7573Z"/>
+                  </svg>
+                  <small>.close-error</small>
+               </div>
+               <div class="row margin-bottom-9">
+                  <svg  viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="normal">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM22.7139 12.7002C23.1007 12.3059 23.0945 11.6728 22.7002 11.2861C22.3059 10.8993 21.6728 10.9055 21.2861 11.2998L14.1538 18.5719L10.7139 15.0645C10.3272 14.6702 9.69409 14.6641 9.29979 15.0508C8.90549 15.4375 8.89935 16.0706 9.28606 16.4649L13.4399 20.7002L14.1538 21.4281L14.8678 20.7002L22.7139 12.7002Z" />
+                  </svg>
+                  <small>.done</small>
+               </div>
+               <div class="row margin-bottom-9">
+                  <svg  viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="search normal">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5563 15.5564C17.8995 13.2132 17.8995 9.41423 15.5563 7.07108C13.2132 4.72793 9.41421 4.72793 7.07107 7.07108C4.72792 9.41423 4.72792 13.2132 7.07107 15.5564C9.41421 17.8995 13.2132 17.8995 15.5563 15.5564ZM16.9706 16.9706C20.0948 13.8464 20.0948 8.78106 16.9706 5.65687C13.8464 2.53267 8.78105 2.53267 5.65685 5.65687C2.53266 8.78106 2.53266 13.8464 5.65685 16.9706C8.78105 20.0948 13.8464 20.0948 16.9706 16.9706Z" />
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3848 18.3848C18.7754 17.9943 19.4085 17.9943 19.7991 18.3848L28.9914 27.5772C29.382 27.9677 29.382 28.6009 28.9914 28.9914C28.6009 29.3819 27.9678 29.3819 27.5772 28.9914L18.3848 19.799C17.9943 19.4085 17.9943 18.7753 18.3848 18.3848Z" />
+                  </svg>
+                  <small>.search</small>
+               </div>
+               <div class="row margin-bottom-9">
+                  <svg  viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="apps normal">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0C1.79083 0 0 1.79089 0 4V28C0 30.2091 1.79083 32 4 32H28C30.2092 32 32 30.2091 32 28V4C32 1.79089 30.2092 0 28 0H4ZM8 6C6.89545 6 6 6.89539 6 8V15C6 16.1046 6.89545 17 8 17H15C16.1046 17 17 16.1046 17 15V8C17 6.89539 16.1046 6 15 6H8Z" />
+                  </svg>
+                  <small>.apps</small>
+               </div>
+               <div class="row margin-bottom-9">
+                  <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="edit normal">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M23.3341 0.707107C22.9435 0.316582 22.3104 0.316583 21.9198 0.707107L2.18929 20.4377L1.41375 24.0416L5.01771 23.2661L24.7483 3.53553C25.1388 3.14501 25.1388 2.51184 24.7483 2.12132L23.3341 0.707107Z"/>
+                  </svg>
+                  <small>.edit</small>
+               </div>
+               <div class="row margin-bottom-9">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="people normal">
+                     <circle cx="16" cy="8" r="8" />
+                     <path d="M0 24C0 21.7909 1.79086 20 4 20H28C30.2091 20 32 21.7909 32 24V32H0V24Z" />
+                  </svg>
+                  <small>.people</small>
+               </div>
+               <p>Colour can be altered by using the SVG properties fill</p>
+               <div class="row margin-bottom-9">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo color-change normal">
+                     <path d="M26.7149 0.000520314C23.8356 0.0401149 21.5328 2.43464 21.571 5.34861L21.6184 8.87347C21.6259 9.49756 21.3894 10.099 20.9601 10.5468L20.7878 10.7259C20.3576 11.1756 19.7672 11.4339 19.1489 11.4415L18.6572 11.449C18.6581 11.449 18.6581 11.4499 18.6581 11.4518C17.8433 10.922 16.8702 10.6185 15.8291 10.6317C14.937 10.6439 14.1017 10.8871 13.3754 11.3048C13.2143 11.2972 13.056 11.2831 12.893 11.285L12.8372 11.2859C12.2216 11.2944 11.6266 11.0559 11.1852 10.6203C10.7401 10.1839 10.4868 9.58712 10.4775 8.9602L10.4291 5.21192C10.39 2.29795 8.0247 -0.0343606 5.14447 0.00429122C2.26518 0.0429431 -0.03862 2.43841 0.000490693 5.35333C0.0386702 8.26824 2.40487 10.5996 5.28322 10.561L8.765 10.5138C9.38146 10.5053 9.97557 10.7448 10.4179 11.1803L10.5958 11.3538C11.039 11.7912 11.2932 12.3898 11.3016 13.0149L11.3091 13.5117C11.3109 13.5107 11.3128 13.5098 11.3146 13.5089C10.9627 14.2244 10.7662 15.0314 10.7764 15.8864C10.7904 16.9083 11.0995 17.8567 11.6154 18.6543C11.6145 18.7523 11.6043 18.8494 11.6043 18.9493L11.6052 19.005C11.6126 19.6291 11.377 20.2305 10.9468 20.6774C10.5166 21.1289 9.92622 21.3854 9.3079 21.3938L5.60635 21.4429C2.72613 21.4806 0.423258 23.876 0.461438 26.7919C0.499617 29.7078 2.86674 32.0382 5.7451 31.9995C8.62532 31.9618 10.9282 29.5654 10.8891 26.6495L10.8435 23.1256C10.8351 22.5025 11.0716 21.9001 11.5009 21.4523L11.6722 21.2741C12.1043 20.8235 12.6938 20.5661 13.313 20.5586L13.8028 20.552C13.8019 20.5482 13.7991 20.5435 13.7972 20.5388C14.4584 20.8414 15.1922 21.0101 15.9651 20.9988C18.7932 20.9611 21.0541 18.6081 21.0169 15.746C21.0104 15.2284 20.9266 14.7288 20.7804 14.2593C20.8279 13.8643 20.8595 13.4627 20.8549 13.0526V12.996C20.8474 12.3729 21.083 11.7705 21.5123 11.3236C21.9425 10.873 22.5329 10.6166 23.1521 10.6071L26.8546 10.5581C29.7339 10.5185 32.0377 8.124 31.9995 5.20815C31.9604 2.29323 29.5942 -0.040017 26.7149 0.000520314Z" />
+                  </svg>
+                  <small>.logo .colour-change</small>
+               </div>
+               <p> Sizes are multiples of 8: 16px for .tiny, 32px for .normal and 64px for .big</p>
+               <div class="row margin-bottom-9">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo big">
+                     <path d="M26.7149 0.000520314C23.8356 0.0401149 21.5328 2.43464 21.571 5.34861L21.6184 8.87347C21.6259 9.49756 21.3894 10.099 20.9601 10.5468L20.7878 10.7259C20.3576 11.1756 19.7672 11.4339 19.1489 11.4415L18.6572 11.449C18.6581 11.449 18.6581 11.4499 18.6581 11.4518C17.8433 10.922 16.8702 10.6185 15.8291 10.6317C14.937 10.6439 14.1017 10.8871 13.3754 11.3048C13.2143 11.2972 13.056 11.2831 12.893 11.285L12.8372 11.2859C12.2216 11.2944 11.6266 11.0559 11.1852 10.6203C10.7401 10.1839 10.4868 9.58712 10.4775 8.9602L10.4291 5.21192C10.39 2.29795 8.0247 -0.0343606 5.14447 0.00429122C2.26518 0.0429431 -0.03862 2.43841 0.000490693 5.35333C0.0386702 8.26824 2.40487 10.5996 5.28322 10.561L8.765 10.5138C9.38146 10.5053 9.97557 10.7448 10.4179 11.1803L10.5958 11.3538C11.039 11.7912 11.2932 12.3898 11.3016 13.0149L11.3091 13.5117C11.3109 13.5107 11.3128 13.5098 11.3146 13.5089C10.9627 14.2244 10.7662 15.0314 10.7764 15.8864C10.7904 16.9083 11.0995 17.8567 11.6154 18.6543C11.6145 18.7523 11.6043 18.8494 11.6043 18.9493L11.6052 19.005C11.6126 19.6291 11.377 20.2305 10.9468 20.6774C10.5166 21.1289 9.92622 21.3854 9.3079 21.3938L5.60635 21.4429C2.72613 21.4806 0.423258 23.876 0.461438 26.7919C0.499617 29.7078 2.86674 32.0382 5.7451 31.9995C8.62532 31.9618 10.9282 29.5654 10.8891 26.6495L10.8435 23.1256C10.8351 22.5025 11.0716 21.9001 11.5009 21.4523L11.6722 21.2741C12.1043 20.8235 12.6938 20.5661 13.313 20.5586L13.8028 20.552C13.8019 20.5482 13.7991 20.5435 13.7972 20.5388C14.4584 20.8414 15.1922 21.0101 15.9651 20.9988C18.7932 20.9611 21.0541 18.6081 21.0169 15.746C21.0104 15.2284 20.9266 14.7288 20.7804 14.2593C20.8279 13.8643 20.8595 13.4627 20.8549 13.0526V12.996C20.8474 12.3729 21.083 11.7705 21.5123 11.3236C21.9425 10.873 22.5329 10.6166 23.1521 10.6071L26.8546 10.5581C29.7339 10.5185 32.0377 8.124 31.9995 5.20815C31.9604 2.29323 29.5942 -0.040017 26.7149 0.000520314Z" />
+                  </svg>
+                  <small>.logo .big</small>
+               </div>
+               <div class="row margin-bottom-9">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo normal">
+                     <path d="M26.7149 0.000520314C23.8356 0.0401149 21.5328 2.43464 21.571 5.34861L21.6184 8.87347C21.6259 9.49756 21.3894 10.099 20.9601 10.5468L20.7878 10.7259C20.3576 11.1756 19.7672 11.4339 19.1489 11.4415L18.6572 11.449C18.6581 11.449 18.6581 11.4499 18.6581 11.4518C17.8433 10.922 16.8702 10.6185 15.8291 10.6317C14.937 10.6439 14.1017 10.8871 13.3754 11.3048C13.2143 11.2972 13.056 11.2831 12.893 11.285L12.8372 11.2859C12.2216 11.2944 11.6266 11.0559 11.1852 10.6203C10.7401 10.1839 10.4868 9.58712 10.4775 8.9602L10.4291 5.21192C10.39 2.29795 8.0247 -0.0343606 5.14447 0.00429122C2.26518 0.0429431 -0.03862 2.43841 0.000490693 5.35333C0.0386702 8.26824 2.40487 10.5996 5.28322 10.561L8.765 10.5138C9.38146 10.5053 9.97557 10.7448 10.4179 11.1803L10.5958 11.3538C11.039 11.7912 11.2932 12.3898 11.3016 13.0149L11.3091 13.5117C11.3109 13.5107 11.3128 13.5098 11.3146 13.5089C10.9627 14.2244 10.7662 15.0314 10.7764 15.8864C10.7904 16.9083 11.0995 17.8567 11.6154 18.6543C11.6145 18.7523 11.6043 18.8494 11.6043 18.9493L11.6052 19.005C11.6126 19.6291 11.377 20.2305 10.9468 20.6774C10.5166 21.1289 9.92622 21.3854 9.3079 21.3938L5.60635 21.4429C2.72613 21.4806 0.423258 23.876 0.461438 26.7919C0.499617 29.7078 2.86674 32.0382 5.7451 31.9995C8.62532 31.9618 10.9282 29.5654 10.8891 26.6495L10.8435 23.1256C10.8351 22.5025 11.0716 21.9001 11.5009 21.4523L11.6722 21.2741C12.1043 20.8235 12.6938 20.5661 13.313 20.5586L13.8028 20.552C13.8019 20.5482 13.7991 20.5435 13.7972 20.5388C14.4584 20.8414 15.1922 21.0101 15.9651 20.9988C18.7932 20.9611 21.0541 18.6081 21.0169 15.746C21.0104 15.2284 20.9266 14.7288 20.7804 14.2593C20.8279 13.8643 20.8595 13.4627 20.8549 13.0526V12.996C20.8474 12.3729 21.083 11.7705 21.5123 11.3236C21.9425 10.873 22.5329 10.6166 23.1521 10.6071L26.8546 10.5581C29.7339 10.5185 32.0377 8.124 31.9995 5.20815C31.9604 2.29323 29.5942 -0.040017 26.7149 0.000520314Z" />
+                  </svg>
+                  <small>.logo .normal</small>
+               </div>
+               <div class="row margin-bottom-9">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo tiny">
+                     <path d="M26.7149 0.000520314C23.8356 0.0401149 21.5328 2.43464 21.571 5.34861L21.6184 8.87347C21.6259 9.49756 21.3894 10.099 20.9601 10.5468L20.7878 10.7259C20.3576 11.1756 19.7672 11.4339 19.1489 11.4415L18.6572 11.449C18.6581 11.449 18.6581 11.4499 18.6581 11.4518C17.8433 10.922 16.8702 10.6185 15.8291 10.6317C14.937 10.6439 14.1017 10.8871 13.3754 11.3048C13.2143 11.2972 13.056 11.2831 12.893 11.285L12.8372 11.2859C12.2216 11.2944 11.6266 11.0559 11.1852 10.6203C10.7401 10.1839 10.4868 9.58712 10.4775 8.9602L10.4291 5.21192C10.39 2.29795 8.0247 -0.0343606 5.14447 0.00429122C2.26518 0.0429431 -0.03862 2.43841 0.000490693 5.35333C0.0386702 8.26824 2.40487 10.5996 5.28322 10.561L8.765 10.5138C9.38146 10.5053 9.97557 10.7448 10.4179 11.1803L10.5958 11.3538C11.039 11.7912 11.2932 12.3898 11.3016 13.0149L11.3091 13.5117C11.3109 13.5107 11.3128 13.5098 11.3146 13.5089C10.9627 14.2244 10.7662 15.0314 10.7764 15.8864C10.7904 16.9083 11.0995 17.8567 11.6154 18.6543C11.6145 18.7523 11.6043 18.8494 11.6043 18.9493L11.6052 19.005C11.6126 19.6291 11.377 20.2305 10.9468 20.6774C10.5166 21.1289 9.92622 21.3854 9.3079 21.3938L5.60635 21.4429C2.72613 21.4806 0.423258 23.876 0.461438 26.7919C0.499617 29.7078 2.86674 32.0382 5.7451 31.9995C8.62532 31.9618 10.9282 29.5654 10.8891 26.6495L10.8435 23.1256C10.8351 22.5025 11.0716 21.9001 11.5009 21.4523L11.6722 21.2741C12.1043 20.8235 12.6938 20.5661 13.313 20.5586L13.8028 20.552C13.8019 20.5482 13.7991 20.5435 13.7972 20.5388C14.4584 20.8414 15.1922 21.0101 15.9651 20.9988C18.7932 20.9611 21.0541 18.6081 21.0169 15.746C21.0104 15.2284 20.9266 14.7288 20.7804 14.2593C20.8279 13.8643 20.8595 13.4627 20.8549 13.0526V12.996C20.8474 12.3729 21.083 11.7705 21.5123 11.3236C21.9425 10.873 22.5329 10.6166 23.1521 10.6071L26.8546 10.5581C29.7339 10.5185 32.0377 8.124 31.9995 5.20815C31.9604 2.29323 29.5942 -0.040017 26.7149 0.000520314Z" />
+                  </svg>
+                  <small>.logo .tiny</small>
+               </div>
+            </div>
+         </div>
+         <!--end id=icons-->
+         <div id="typography" class="margin-bottom-10">
+            <h1>Typography</h1>
+            <p class="margin-bottom-9">Length for content should be max 100 characters, left aligned. In the exception of the content being aligned at the center, align also the typography.
+               All font sizes have a ratio of 1.125, known as the major second type scale with a base size of 16px. This means that each size is multiplied or divided by 1.125 from the previous size.</a>
+            <h1>H1 Main heading</h1>
+            <h2>H2 Secondary heading</h2>
+            <h3>H3 Tertiary heading</h3>
+            <h4>H4 Small heading</h4>
+            <p>Normal text</p>
+            <small>Small text</small>
+            <div class="tiny">Tiny text</div>
+         </div>
+         <!--end id=typography-->
+         <div id="buttons" class="margin-bottom-10">
+            <h1>Buttons & Links</h1>
+            <p class="margin-bottom-9">Button are used to trigger actions.
+               Text-decoration is removed from menus and navs to reduce visual noise.
+            </p>
+            <div class="margin-bottom-9">
+               <div class="row">
+                  <button class="primary">Continue</button>
+                  <small>.primary (interactive)</small>
+               </div>
+               <div class="row">
+                  <button  class="hoverp">Continue</button>
+                  <small>primary:hover state</small>
+               </div>
+               <div class="row">
+                  <button  class="activep">Continue</button>
+                  <small>primary:active state</small>
+               </div>
+            </div>
+            <!--primary-->
+            <div class="margin-bottom-9">
+               <div class="row">
+                  <button class="secondary" >Cancel</button>
+                  <small>.secondary (interactive)</small>
+               </div>
+               <div class="row">
+                  <button class="hovers" >Cancel</button>
+                  <small>.secondary:hover state</small>
+               </div>
+               <div class="row">
+                  <button class="actives" >Cancel</button>
+                  <small>.secondary:active state</small>
+               </div>
+            </div>
+            <!--secondary-->
+            <div class="margin-bottom-9">
+               <div class="row">
+                  <button class="destructive" >Delete</button>
+                  <small>.destructive (interactive)</small>
+               </div>
+               <div class="row">
+                  <button class="hovers" >Delete</button>
+                  <small>.destructive:hover state</small>
+               </div>
+               <div class="row">
+                  <button class="actived" >Delete</button>
+                  <small>.destructive:active state</small>
+               </div>
+            </div>
+            <!--destructive-->
+            <div class="margin-bottom-9">
+               <div class="row">
+                  <a href="">Yapily.com</a>
+                  <small>Links (interactive)</small>
+               </div>
+               <div class="row">
+                  <a href="" id="hoverl">Yapily.com</a>
+                  <small>Links:hover state  </small>
+               </div>
+               <div class="row" >
+                  <a id="hoverla" href="">Yapily.com</a>
+                  <small>Links:active state  </small>
+               </div>
+               <!--links-->
+            </div>
+         </div>
+         <!--end id=buttons-->
+         <div id="breadcrumbs" class="margin-bottom-10">
+            <h1>Breadcrumbs</h1>
+            <p class="margin-bottom-9">Use breadcrumbs to guide people back to the starting point in a complex architectures. </p>
+            <div class="breadcrumbs">
+               <a href="">Home</a> / <a href=""> Second page </a> / <span class="current-bc">Current page</span>
+            </div>
+         </div>
+         <!--end id=breadcrumbs-->
+         <div id="cards" class="margin-bottom-10">
+            <h1>Cards</h1>
+            <p class="margin-bottom-9">Cards are containers for information </p>
+            <div class="row">
+               <div class="card">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo color-change normal">
+                     <path d="M26.7149 0.000520314C23.8356 0.0401149 21.5328 2.43464 21.571 5.34861L21.6184 8.87347C21.6259 9.49756 21.3894 10.099 20.9601 10.5468L20.7878 10.7259C20.3576 11.1756 19.7672 11.4339 19.1489 11.4415L18.6572 11.449C18.6581 11.449 18.6581 11.4499 18.6581 11.4518C17.8433 10.922 16.8702 10.6185 15.8291 10.6317C14.937 10.6439 14.1017 10.8871 13.3754 11.3048C13.2143 11.2972 13.056 11.2831 12.893 11.285L12.8372 11.2859C12.2216 11.2944 11.6266 11.0559 11.1852 10.6203C10.7401 10.1839 10.4868 9.58712 10.4775 8.9602L10.4291 5.21192C10.39 2.29795 8.0247 -0.0343606 5.14447 0.00429122C2.26518 0.0429431 -0.03862 2.43841 0.000490693 5.35333C0.0386702 8.26824 2.40487 10.5996 5.28322 10.561L8.765 10.5138C9.38146 10.5053 9.97557 10.7448 10.4179 11.1803L10.5958 11.3538C11.039 11.7912 11.2932 12.3898 11.3016 13.0149L11.3091 13.5117C11.3109 13.5107 11.3128 13.5098 11.3146 13.5089C10.9627 14.2244 10.7662 15.0314 10.7764 15.8864C10.7904 16.9083 11.0995 17.8567 11.6154 18.6543C11.6145 18.7523 11.6043 18.8494 11.6043 18.9493L11.6052 19.005C11.6126 19.6291 11.377 20.2305 10.9468 20.6774C10.5166 21.1289 9.92622 21.3854 9.3079 21.3938L5.60635 21.4429C2.72613 21.4806 0.423258 23.876 0.461438 26.7919C0.499617 29.7078 2.86674 32.0382 5.7451 31.9995C8.62532 31.9618 10.9282 29.5654 10.8891 26.6495L10.8435 23.1256C10.8351 22.5025 11.0716 21.9001 11.5009 21.4523L11.6722 21.2741C12.1043 20.8235 12.6938 20.5661 13.313 20.5586L13.8028 20.552C13.8019 20.5482 13.7991 20.5435 13.7972 20.5388C14.4584 20.8414 15.1922 21.0101 15.9651 20.9988C18.7932 20.9611 21.0541 18.6081 21.0169 15.746C21.0104 15.2284 20.9266 14.7288 20.7804 14.2593C20.8279 13.8643 20.8595 13.4627 20.8549 13.0526V12.996C20.8474 12.3729 21.083 11.7705 21.5123 11.3236C21.9425 10.873 22.5329 10.6166 23.1521 10.6071L26.8546 10.5581C29.7339 10.5185 32.0377 8.124 31.9995 5.20815C31.9604 2.29323 29.5942 -0.040017 26.7149 0.000520314Z" />
+                  </svg>
+                  <h1>API Documentation</h1>
+                  <p>Learn how Yapily securely abstracts and normalises each financial institution’s APIs to provide a simple gateway to financial data. </p>
+               </div>
+            </div>
+         </div>
+         <!--end id=cards-->
+         <div id="checkboxes" class="margin-bottom-10">
+            <h1>Checkboxes & Radios</h1>
+            <p class="margin-bottom-9">Checkboxes allow people choosing one or multiple options from a list. Radio buttons allow selecting only one option from a list. </p>
+            <div>
+               <div class="row">
+                  <label class="container">Please select this
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                  </label>
+               </div>
+               <div class="row">
+                  <label class="container2">Please select this
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark2"></span>
+                  </label>
+                  <label class="container2">Or this
+                  <input type="radio" name="radio">
+                  <span class="checkmark2"></span>
+                  </label>
+               </div>
+            </div>
+         </div>
+         <!--end id=checkboxes-->
+         <div id="date" class="margin-bottom-10">
+            <h1>Date & Time</h1>
+            <p class="margin-bottom-9">Date & time inputs are used to filter information.</p>
+            <div class="row">
+               <label>
+                  From <input type="date"> <input type="time">
+            </div>
+            <div class="row">
+            </label><label>To <input type="date"> <input type="time">
+            </div>
+            <small>* Safari desktop does not support input type="date" or input type="time" yet.</small>
+         </div>
+         <!--end id=date-->
+         <div id="dropdown" class="margin-bottom-10">
+         <h1>Dropdown</h1>
+         <p class="margin-bottom-9">Dropdown allow people to select one option from a list, use when there are too many to put in radios or checkboxes.</p>
+         <div class="row">
+         <span class="light-text margin-bottom-8">Select region</span>
+         <div class="custom-select">
+         <select>
+         <option value="0">Select</option>
+         <option value="1">🌏 All regions</option>
+         <option value="2">🇬🇧 United Kingdom</option>
+         <option value="3">🇮🇹 Italy</option>
+         <option value="4">🇪🇺 Europe</option>
+         </select>
+         </div>
+         </div>
+         </div>
+         <!--end id=dropdown-->
+         <div id="dropdown-search" class="margin-bottom-10">
+         <h1>Dropdown search</h1>
+         <p class="margin-bottom-9">Whent the content of a select contain more that 10 items, use search.</p>
+
+
+
+
+
+   <div class="dropdown-search">
+     <button onclick="myFunction2()" class="dropbtn secondary">Select countries</button>
+     <div id="dropdown-countries" class="dropdown-content">
+       <div class="search">
+       <input type="text" placeholder="Search" id="input-search" onkeyup="filterFunction2()"></div>
+
+       <a href=""><label class="container">🇬🇧 United Kingdom
+        <input type="checkbox" >
+        <span class="checkmark"></span>
+        </label></a>
+       <a href=""><label class="container">🇮🇹 Italy
+        <input type="checkbox">
+        <span class="checkmark"></span>
+        </label></a>
+       <a href=""><label class="container">🇪🇺 Europe
+        <input type="checkbox" >
+        <span class="checkmark"></span>
+        </label></a>
+
+     </div>
+   </div>
+
+         </div>
+
+         </div>
+         <!--end id=dropdown search-->
+         <div id="navigation" class="margin-bottom-10">
+         <h1>Dropdown navigation </h1>
+         <p class="margin-bottom-9">Use this component to declutter and hide secondary sections.
+         </p>
+
+         <div class="dropdown-nav row">
+  <a href="">Matt Richards &#9662;</a>
+  <div class="dropdown-content">
+    <a href="#">Certificates</a>
+    <a href="#">Registrations</a>
+    <a href="#">Teams</a>
+    <div class="menu-divider">
+    <a href="#">Documents &nearr;</a>
+  </div>
+  </div>
+</div>
+</div>
+
+         <!--end id=navigation-->
+         <div id="accordion" class="margin-bottom-10 ">
+         <h1>Expand content</h1>
+         <p class="margin-bottom-9">Expand content helps revealing more information when required while keeping the interface minimal.</p>
+         <button class="accordion">Click for more information</button>
+         <div class="panel">
+         <h2>  Connect to thousands of banks. Effortlessly.</h2>
+         <p>Using a single open API, you can access the data you need to enrich the end-users experience. From aggregating, categorising and enriching account information, to initiating payments and transactions, your business gains the visibility to offer personalised financial advice.</p>
+         </div>
+         </div>
+         <!--end id=accordion-->
+         <div id="upload" class="margin-bottom-10 ">
+         <h1>File Upload</h1>
+         <p class="margin-bottom-9">Upload helps people uploading files.</p>
+         <div>
+         <label>Select file <input type="file">
+         </div>
+         </div>
+         <!--end id=upload-->
+         <div id="loading" class="margin-bottom-10">
+         <h1>Loading indicators</h1>
+         <p class="margin-bottom-9">Use loading indicators when is required to wait for a process to finish.
+         Use the .bar-indicator on top of the page for less disruptive scenarios.
+         </p>
+         <div class="margin-bottom-9">
+         <button onclick="move()" class="secondary margin-bottom-9">Show progress</button>
+         <div id="progress">
+         <div id="loading-bar"></div>
+         </div>
+         <small>.loading-bar</small>
+         </div>
+         <div class="margin-bottom-9">
+         <div class="spinner-container">
+         <div class="spinner">
+         </div>
+         </div>
+         <small>.spinner</small>
+         </div>
+         </div>
+         <!--end id=loading-->
+         <div id="modals" class="margin-bottom-10 ">
+         <h1>Modal</h1>
+         <p class="margin-bottom-9">Use modals to confirm destructive actions or to display extra information when content is too large for an accordion or tooltips.
+         Describe the main action in the button. ie. If the modal is to delete and application use "Delete appliaction" in the button.
+         <div>
+         <button class="secondary" id="btn">Open modal window</button>
+         <!-- The Modal -->
+         <div id="modal" class="modal">
+         <!-- Modal content -->
+         <div class="modal-content">
+         <!--  Close X  <span class="">&times;</span>-->
+         <h2>Delete application</h2>
+         <p class="margin-bottom-9">Are you sure you want to delete your application?</p>
+         <button class="secondary close">Cancel</button><button class="destructive">Delete application</button>
+         </div>
+         </div>
+         </div>
+         </div>
+         <!--end id=modal-->
+
+         <div id="pagination" class="margin-bottom-10 ">
+         <h1>Pagination</h1>
+         <p class="margin-bottom-9">Use pagination when the volume of content in one page affects the performance.
+         </p>
+         <div class="pagination subgrid2 light-text"><div class="whatpage">Items 1-20 of 200</div><div class="pages"><button class="secondary" disabled>Previous</button><button class="secondary current">1</button><button class="secondary">2</button><button class="secondary">3</button><button class="secondary">Next</button>
+         </div>
+         </div>
+         </div>
+         <!--end id=pagination-->
+         <div id="steps" class="margin-bottom-10">
+         <h1>Steps</h1>
+         <p class="margin-bottom-9">Use this component to guide people when a task has many steps to be completed. Don't use when steps are more than 7+.
+         Always show what was done, where people are and what's left to do.
+         </p>
+         <div class="margin-bottom-9">
+         <div class="steps">
+         <div class="horizontal">
+         <span class="step-number done">&checkmark;</span><span class="done">Upload certificates</span>
+         </div>
+         <div class="horizontal">
+         <span class="step-number doing">2</span>  <span class="doing">Create application</span>
+         </div>
+         <div class="horizontal"> <span class="step-number to-do">3</span>
+         <span class="to-do">Add institutions</span>
+         </div>
+         </div>
+         <small >.horizontal</small>
+         </div>
+         <div class="steps">
+         <div class="vertical">
+         <span class="step-number done">&checkmark;</span><span class="done">Upload certificates</span>
+         </div>
+         <div class="vertical">
+         <span class="step-number doing">2</span>  <span class="doing">Create application</span>
+         </div>
+         <div class="vertical"> <span class="step-number to-do">3</span>
+         <span class="to-do">Add institutions</span>
+         </div>
+         </div>
+         <small>.vertical</small>
+         </div>
+         <!--end id=steps-->
+         <div id="tags" class="margin-bottom-10 ">
+         <h1>Tags</h1>
+         <p class="margin-bottom-9">Tags are short labels to describe specific features. They should take very little space in the layouts as they act as additional information.</p>
+         <div>
+         <div class="row">
+         <div class="tag light-green">Production</div>
+         </div>
+         <div class="row">
+         <div class="tag light-purple">Preconfigured Sandbox</div>
+         </div>
+         <div class="row">
+         <div class="tag light-yellow">Sandbox</div>
+         </div>
+         <div class="row"><span class="staging tiny">STAGING</span>
+         </div>
+         </div>
+         </div>
+         <!--end id=tags-->
+         <div id="tables" class="margin-bottom-10" >
+         <h1>Tables</h1>
+         <p class="margin-bottom-9">Table arranges information in ways that information can be easily compared. </p>
+         <div class="margin-bottom-8">
+
+
+           <div class="search">
+            <input type="text" class="input-icon" id="input" onkeyup="myFunction()" placeholder="Search by name">
+
+         </div>
+       </div>
+         <table style="width:100%" id="myTable2">
+         <!--When a header is clicked, run the sortTable function, with a parameter,
+            0 for sorting by names, 1 for sorting by country: -->
+         <tr>
+         <th onclick="sortTable(0)">Name</th>
+         <th onclick="sortTable(1)">Price</th>
+         <th onclick="sortTable(1)">Amount</th>
+         </tr>
+         <tr>
+         <td>Stefano</td>
+         <td>£45</td>
+         <td>1</td>
+         </tr>
+         <tr>
+         <td>Joao</td>
+         <td>£42</td>
+         <td>3</td>
+         </tr>
+         <tr>
+         <td>Ron</td>
+         <td>£47</td>
+         <td>2</td>
+         </tr>
+         </table>
+         </div>
+         <!--end id=tables-->
+         <div id="tabs" class="margin-bottom-10 ">
+         <h1>Tabs</h1>
+         <p class="margin-bottom-9">Tabs allow users to navigate content withing a section. Never use tabs for less than 3 items</p>
+         <div class="tabs">
+         <button class="current tablinks" id="defaultOpen" onclick="openContent(event, 'Content1')">Tab 1</button>
+         <button class="tablinks" onclick="openContent(event, 'Content2')">Tab 2</button>
+         <button class="tablinks"  onclick="openContent(event, 'Content3')">Tab 3</button>
+         </div>
+         <div id="Content1" class="panel tabcontent" >
+         <h1>Send and receive money for less</h1>
+         <p>Enabling your customers to safely make low-cost payments and transfers</p>
+         </div>
+         <div id="Content2" class="panel tabcontent">
+         <h1>Build the future of finance</h1>
+         <p>Use our API to power any financial application, anywhere in the world. Within minutes, you can build products that will enrich the customer experience and create financial opportunity.</p>
+         </div>
+         <div id="Content3" class="panel tabcontent">
+         <h1>Simplify payments and transfers using one seamless connection</h1>
+         <p>The explosive rise in electronic payments brings new complexities for Banks and Payment Service Providers.</p>
+         <p>From payment access and processing fees to fraud risk and compliance, providers can no longer ignore the technical threats that could impact the payment experience for customers.</p>
+         <p>Yapily simplifies payments and transfers using one seamless connection. Yapily is the gateway for companies to quickly collect funds and process payments on behalf of customers. A single integration gives access to thousands of bank connections, enabling providers to focus on simplifying the payment process while benefiting from a significant fee reduction.
+         </p>
+         </div>
+         </div>
+         <!--end id=tabs-->
+         <div id="text-area" class="margin-bottom-10 ">
+         <h1>Text area</h1>
+         <p class="margin-bottom-9">Text area allows people to enter a large text
+         </p>
+         <div class="text-area">
+         <label>Please contact us</label>
+         <textarea >
+         </textarea>
+         </div>
+         </div>
+         <!--end id=textarea-->
+         <div id="text-input" class="margin-bottom-10 ">
+            <h1>Text input</h1>
+            <p class="margin-bottom-9">Text inputs allow people to send text, usually within forms.
+            </p>
+            <div>
+               <div class="row">
+                  <label>Please contact us</label>
+                  <input type="text">
+               </div>
+               <div class="row margin-bottom-9">
+                  <label>Name</label>
+                  <input type="text" class="input-icon-button"><i><a href="">Edit</a></i>
+               </div>
+               <div class="row">
+               <div class="search">
+                  <input type="text" class="input-icon" placeholder="Search">
+
+               </div>
+             </div>
+               <div class="row">
+                  <label>Password</label>
+                  <input type="password" value="StrongPassword!*()" id="input-pw">
+                  <label class="container">Show password
+                  <input type="checkbox"onclick="Passfunction()" >
+                  <span class="checkmark"></span>
+                  </label>
+               </div>
+            </div>
+         </div>
+         <!--end id=textarea-->
+         <div id="tooltips" class="margin-bottom-10">
+            <h1>Tooltips</h1>
+            <p class="margin-bottom-9">Use tooltips to clarify jargon or when more information needs to be displayed in tight spaces. Keep the tooltip content as short as possible.
+            </p>
+            <div class="tooltip">
+               <div class="light-green tag">Beta</div>
+               <span class="tooltiptext">Not tested with live accounts</span>
+            </div>
+         </div>
+         <!--end id=tooltip-->
+         <div id="institutions" class="margin-bottom-10">
+            <h1>Select institutions</h1>
+            <p class="margin-bottom-9">Use this pattern when you need to provide a list of institutions people need to select from.
+            </p>
+            <div class="institutions">
+               <div class="institution"><div class="institution-name-logo"><img src="img/bnl.png" alt="logo-Banca Nazionale del Lavoro">Banca Nazionale del Lavoro</div>
+             </div>
+               <div class="institution"><div class="institution-name-logo"><img src="img/monzo.png" alt="logo-Monzo">Monzo</div></div>
+               <div class="institution"><div class="institution-name-logo"><img src="img/starling.png" alt="logo-Monzo">Starling</div></div>
+               </d>
+            </div>
+            <!--end id=institutions-->
+         </div>
+      </main>
+   </body>
+</html>

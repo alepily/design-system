@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head><meta name="robots" content="noindex">
+      <title>Applications</title>
+      <link rel="stylesheet" type="text/css" href="yapilyui.css">
+      <link rel="shortcut icon" href="icons/icon-48x48.png">
+
+      <script async="" src="js/back.js"></script>
+   <meta charset="UTF-8"> </head>
+   <body class="fixed-width grid-dashboard applications" >
+      <header id="top" class="flex justify-space-between">
+         <div class="isologo">
+            <svg width="171" height="29" viewBox="0 0 171 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <g clip-path="url(#clip0)">
+                  <path d="M51.2952 13.9202L45.8099 4.47302H41.9043L49.3999 18.1423V24.5734H53.2484V17.9981L60.5692 4.47302H56.6926L51.2952 13.9202Z" />
+                  <path d="M74.1762 4.47278L65.3594 24.5732H69.352L71.1321 20.3247H80.952L82.7329 24.5732H86.868L78.1671 4.47278H74.1762ZM72.5104 17.0204L76.0706 8.57969L79.5736 17.0204H72.5104Z" />
+                  <path d="M109.336 6.28272C107.948 5.07666 105.991 4.47278 103.463 4.47278H95.2227V24.5732H99.0711V18.6572H103.463C105.991 18.6572 107.948 18.0226 109.336 16.7492C110.724 15.4757 111.417 13.6914 111.417 11.3944C111.417 9.1921 110.724 7.48878 109.336 6.28272ZM106.609 14.3225C105.832 14.9537 104.718 15.2702 103.262 15.2702H99.0711V7.83251H103.262C104.718 7.83251 105.832 8.13872 106.609 8.75113C107.384 9.3644 107.77 10.283 107.77 11.5087C107.771 12.7531 107.384 13.6905 106.609 14.3225Z" />
+                  <path d="M123.709 4.47278H119.861V24.5723H123.709V4.47278Z" />
+                  <path d="M138.352 4.47278H134.506V24.5732H147.024V21.0983H138.352V4.47278Z" />
+                  <path d="M166.359 4.47278L160.96 13.92L155.475 4.47278H151.571L159.066 18.142V24.5732H162.914V17.9987L170.236 4.47278H166.359Z" />
+                  <path d="M24.4686 0.0479561C21.8314 0.0837796 19.722 2.25025 19.757 4.88669L19.8005 8.07584C19.8073 8.64049 19.5907 9.18466 19.1975 9.58981L19.0397 9.75187C18.6456 10.1587 18.1049 10.3924 17.5385 10.3992L17.0881 10.4061C17.089 10.4061 17.089 10.4069 17.089 10.4086C16.3427 9.92928 15.4514 9.65463 14.4978 9.66657C13.6806 9.67766 12.9156 9.89772 12.2503 10.2756C12.1027 10.2687 11.9577 10.256 11.8084 10.2577L11.7573 10.2585C11.1935 10.2662 10.6484 10.0504 10.2441 9.65634C9.83644 9.26143 9.60444 8.72151 9.59591 8.15431L9.55156 4.76301C9.51574 2.12657 7.34927 0.0163973 4.71112 0.0513679C2.07383 0.0863385 -0.0363506 2.25366 -0.000527111 4.89096C0.0344435 7.52825 2.20177 9.63757 4.83821 9.6026L8.02736 9.55996C8.592 9.55228 9.13618 9.76893 9.54133 10.163L9.70424 10.3199C10.1102 10.7157 10.3431 11.2573 10.3508 11.8228L10.3576 12.2723C10.3593 12.2715 10.361 12.2706 10.3627 12.2697C10.0403 12.9171 9.86033 13.6472 9.86971 14.4209C9.8825 15.3455 10.1657 16.2035 10.6382 16.9251C10.6374 17.0138 10.628 17.1017 10.628 17.1921L10.6288 17.2424C10.6356 17.807 10.4199 18.3512 10.0258 18.7555C9.63174 19.1641 9.09097 19.3961 8.52462 19.4037L5.13418 19.4481C2.49603 19.4822 0.386708 21.6495 0.421679 24.2877C0.456649 26.9258 2.62483 29.0343 5.26127 28.9993C7.89941 28.9652 10.0087 26.797 9.97291 24.1589L9.93112 20.9706C9.92344 20.4068 10.1401 19.8618 10.5333 19.4566L10.6902 19.2954C11.086 18.8877 11.6259 18.6549 12.1931 18.648L12.6418 18.6421C12.6409 18.6387 12.6384 18.6344 12.6366 18.6301C13.2422 18.9039 13.9144 19.0566 14.6223 19.0464C17.2127 19.0122 19.2836 16.8833 19.2495 14.2938C19.2435 13.8255 19.1668 13.3735 19.0329 12.9487C19.0764 12.5913 19.1054 12.228 19.1011 11.8569V11.8057C19.0943 11.242 19.3101 10.6969 19.7033 10.2926C20.0973 9.88493 20.6381 9.65293 21.2053 9.6444L24.5966 9.60004C27.2339 9.56422 29.3441 7.39775 29.3091 4.7596C29.2733 2.12231 27.1059 0.0112796 24.4686 0.0479561Z" />
+               </g>
+               <defs>
+                  <clipPath id="clip0">
+                     <path d="M0 0H170.588V29H0V0Z" fill="white"/>
+                  </clipPath>
+               </defs>
+            </svg>
+
+         </div>
+         <div>
+            <nav>
+               <a href="quickstart.html" >Quickstart</a>
+               <a href="certificates.html" >Certificates</a>
+               <a href="applications.html" class="current">Applications</a>
+               <a href="institutions.html">Institutions</a>
+
+            </nav>
+         </div>
+         <div class="subnavMenu">
+            <div class="dropdown-nav ">
+               <a href="">Matt Richards &#9662;</a>
+               <div class="dropdown-content">
+
+                  <div>
+                     <a href="#">API Documents &nearr;</a>
+                  </div>
+                  <div class="menu-divider">
+                     <a href="login.html">Logout</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main>
+         <button class="secondary margin-bottom-big" onclick="goBack()">Back</button>
+         <div class="card">
+            <div>
+               <h1>Production App</h1>
+            </div>
+            <div class="tabs">
+               <button class="current tablinks" id="defaultOpen" data-target="#Content1">Settings</button>
+               <button class="tablinks" data-target="#Content2">Institutions</button>
+               <button class="tablinks"  data-target="#Content3">Tools</button>
+               <button class="tablinks"  data-target="#Content4">Analytics</button>
+            </div>
+            <div id="Content1" class="panel tabcontent" >
+               <div class="margin-bottom-huge">
+                  <h2>Customise</h2>
+                      <div class=" row">
+                          <div class="margin-bottom-small">App icon</div>
+                  <div class="img-upload">
+                     <div class="overlay">
+                       Edit
+                     </div>
+                  </div>
+                </div>
+                  <div class="row">
+                     <label>App name</label>
+                     <input type="text" value="Production app" maxlength="215" class="margin-right-normal"><button class="secondary">Save</button>
+                  </div>
+               </div>
+               <div class="margin-bottom-huge">
+                  <h2>API credentials</h2>
+                  <table  class="no-sort data first-col">
+                     <!--When a header is clicked, run the sortTable function, with a parameter,
+                        0 for sorting by names, 1 for sorting by country: -->
+                     <tr>
+                        <th >Type</th>
+
+                        <th >Created</th>
+                            <th >Key</th>
+                        <th></th>
+
+                     </tr>
+                     <tr>
+                        <td>Application ID</td>
+                          <td>11  October 2019, 21:03</td>
+                        <td><input type="text" value="8f3de1fe-5ea9-4215-9e37-6dd7355972ef"   class="width-100"></td>
+
+                        <td class="text-align-right"><a href="">Copy</a></td>
+
+                     </tr>
+                     <tr>
+                        <td>Application Secret</td>
+                          <td>11  October 2019, 21:03</td>
+                        <td><input type="password" value="aksjdaskj!dhaskdjhsakdjsadkjsah"  class="width-100"></td>
+
+                        <td class="text-align-right"><a href="" class="margin-right-big">Reveal</a><a href="">Revoke</a></td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="margin-bottom-huge">
+                  <h2>Authorisation callbacks</h2>
+                  <p class="margin-bottom-big">Your customers will be redirected to one of the following URLs after authenticating with the institution.
+                     Learn more in our <a href="">API Documents &nearr;</a>
+                  </p>
+                  <table  class="no-sort margin-bottom-normal data first-col">
+                     <!--When a header is clicked, run the sortTable function, with a parameter,
+                        0 for sorting by names, 1 for sorting by country: -->
+                     <tr>
+                     </tr>
+                     <tr>
+                        <td>URL
+                        </td>
+                        <td>
+                          <input type="text" value="https://redirect.com/redirect1"   class="width-100">
+
+                        </td>
+                        <td class="text-align-right">
+                           <button class="secondary icon-only margin-right-big ">
+                              <svg viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="edit tiny brand-black">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0623 9.89978L22.8196 5.65714L2.38195 26.0948L2.18929 25.9021L2.12086 30.2132L6.43193 30.1448L6.62459 30.3374L27.0623 9.89978Z" />
+                                 <path d="M27.5771 0.899734C27.9676 0.509209 28.6008 0.509209 28.9913 0.899734L31.8197 3.72816C32.2102 4.11868 32.2102 4.75185 31.8197 5.14237L29.6984 7.26369L25.4558 3.02105L27.5771 0.899734Z" />
+                              </svg>
+                           </button>
+                           <button class="secondary icon-only">
+                              <svg  viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0H6V4H0V8H28V4H22V0Z" />
+                                 <path d="M2 12H26V30C26 32.2091 24.2091 34 22 34H6C3.79086 34 2 32.2091 2 30V12Z" />
+                              </svg>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>URL
+                        </td>
+                        <td>
+  <input type="text" value="  https://redirect.com/redirect4-mobile75538 see edit mode here >> "   class="width-100">
+
+                        </td>
+                        <td class="text-align-right">
+                           <a href="application-settings-edit-mode.html" class="prototype margin-right-big">
+                             <button class="secondary icon-only">
+                              <svg viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0623 9.89978L22.8196 5.65714L2.38195 26.0948L2.18929 25.9021L2.12086 30.2132L6.43193 30.1448L6.62459 30.3374L27.0623 9.89978Z" />
+                                 <path d="M27.5771 0.899734C27.9676 0.509209 28.6008 0.509209 28.9913 0.899734L31.8197 3.72816C32.2102 4.11868 32.2102 4.75185 31.8197 5.14237L29.6984 7.26369L25.4558 3.02105L27.5771 0.899734Z" />
+                              </svg>
+                           </button>
+                         </a>
+                           <button class="secondary icon-only">
+                              <svg  viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0H6V4H0V8H28V4H22V0Z" />
+                                 <path d="M2 12H26V30C26 32.2091 24.2091 34 22 34H6C3.79086 34 2 32.2091 2 30V12Z" />
+                              </svg>
+                           </button>
+                        </td>
+                     </tr>
+                  </table>
+                  <button class="secondary">Add callback</button>
+               </div>
+               <div class="margin-bottom-huge">
+                  <h2>Advanced logs</h2>
+                  <p>
+                     Enable to see response payload and request payload in all your logs.
+                     All logs are deleted every 30 days as logs contain sensitive information.
+                  </p>
+                  <div >
+                     <label class="container">Enable Advanced logs
+                     <input type="checkbox" >
+                     <span class="checkmark"></span>
+                     </label>
+                  </div>
+               </div>
+               <div class="margin-bottom-huge">
+                  <h2>Delete application</h2>
+                  <p>
+                     This action can’t be undone.
+                  </p>
+                  <div>
+                     <button class="destructive" id="btn">
+                     Delete application</button>
+                     <!-- The Modal -->
+                     <div id="modal" class="modal">
+                        <!-- Modal content -->
+                        <!-- Modal content -->
+                        <div class="modal-content card">
+                           <span class="close">&times;</span>
+                           <h2>Delete application</h2>
+                           <p class="margin-bottom-big">Please confirm you want to delete ApplicationName, this action cannot be undone.</p>
+                           <div class="action-area subgrid2">
+                          <button class="destructive width-100">Cancel</button><button class="destructive width-100">Delete application</button>
+                       </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--end of content 1-->
+            <div id="Content2" class="panel tabcontent ">
+            <div class="subgrid2 margin-bottom-big">
+              <div>
+               <h1>Institutions</h1>
+                <p class="margin-bottom-big">Curate the list of institutions your customers will see</p>
+             </div>
+             <div class="justify-right"><button class="primary">Add Institution</button></div>
+           </div>
+
+               <div class="margin-bottom-big   ">
+                 <div class="search">
+                       <input type="text" class="input-icon" placeholder="Search">
+                       <button class="secondary reset-search">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.12113 5.37866C5.99316 5.37865 5.86518 5.42747 5.76754 5.52511C5.57228 5.72037 5.57228 6.03695 5.76754 6.23222L7.53533 8.00001L5.76758 9.76776C5.57231 9.96303 5.57231 10.2796 5.76758 10.4749C5.96284 10.6701 6.27942 10.6701 6.47468 10.4749L8.24244 8.70711L8.59597 9.06064L8.60122 9.06581L10.0103 10.4749C10.2055 10.6701 10.5221 10.6701 10.7174 10.4749C10.9126 10.2796 10.9126 9.96301 10.7174 9.76775L8.94958 7.99997L10.7173 6.23223C10.9126 6.03697 10.9126 5.72039 10.7173 5.52512C10.5221 5.32986 10.2055 5.32986 10.0102 5.52512L8.24248 7.29286L6.47472 5.52511C6.37708 5.42747 6.2491 5.37865 6.12113 5.37866Z" fill="black"/>
+                          </svg>
+                       </button>
+                 </div>
+
+               </div>
+               <table  id="myTable2">
+                  <th></th>
+                  <th>Name</th>
+                  <th>Countries</th>
+                  <th>Institution ID</th>
+                  <th>Integration status</th>
+                  <th>Environments</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <tr>
+                     <td><img src="img/aib.png" alt="Allied Irish Bank Business"></td>
+                     <td>Allied Irish Bank (ROI)</td>
+                     <td><a href="institution-detail.html">32 countries</a></td>
+                     <td>allied-institution</td>
+                     <td>
+                        <div class="tooltip">
+                           <div class=""> ✅ Tested</div>
+                           <span class="tooltiptext">Tested with live accounts</span>
+                        </div>
+                     </td>
+                     <td>
+                        <div >🚀 Production</div>
+                     </td>
+                     <td>
+                        <button class="secondary icon-only ">
+                           <svg viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0623 9.89978L22.8196 5.65714L2.38195 26.0948L2.18929 25.9021L2.12086 30.2132L6.43193 30.1448L6.62459 30.3374L27.0623 9.89978Z" />
+                              <path d="M27.5771 0.899734C27.9676 0.509209 28.6008 0.509209 28.9913 0.899734L31.8197 3.72816C32.2102 4.11868 32.2102 4.75185 31.8197 5.14237L29.6984 7.26369L25.4558 3.02105L27.5771 0.899734Z" />
+                           </svg>
+                        </button>
+                     </td>
+                     <td>
+                        <button class="secondary icon-only">
+                           <svg  viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="edit tiny brand-black">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0H6V4H0V8H28V4H22V0Z" />
+                              <path d="M2 12H26V30C26 32.2091 24.2091 34 22 34H6C3.79086 34 2 32.2091 2 30V12Z" />
+                           </svg>
+                        </button>
+                     </td>
+                     <td>
+                        <a href="institution-detail.html" class="prototype">
+                           <button class="secondary"> Details</button>
+                     </td>
+                  </tr>
+                  <tr>
+                  <td><img src="img/aib.png" alt="Allied Irish Bank Business"></td>
+                  <td>Allied Irish Bank Business (ROI)</td>
+                  <td><a href="institution-detail.html">32 countries</a></td>
+                  <td>allied-institution</td>
+                  <td>
+                  <div class="tooltip">
+                  <div class=""> ✅ Tested</div>
+                  <span class="tooltiptext">Tested with live accounts</span>
+                  </div>
+                  </td>
+                  <td>
+                  <div >🚀 Production</div>
+                  </td>
+                  <td><button class="secondary">
+                  <svg viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0623 9.89978L22.8196 5.65714L2.38195 26.0948L2.18929 25.9021L2.12086 30.2132L6.43193 30.1448L6.62459 30.3374L27.0623 9.89978Z" />
+                  <path d="M27.5771 0.899734C27.9676 0.509209 28.6008 0.509209 28.9913 0.899734L31.8197 3.72816C32.2102 4.11868 32.2102 4.75185 31.8197 5.14237L29.6984 7.26369L25.4558 3.02105L27.5771 0.899734Z" />
+                  </svg>
+                  </button></td>
+                  <td><button class="secondary">
+                  <svg  viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0H6V4H0V8H28V4H22V0Z" />
+                  <path d="M2 12H26V30C26 32.2091 24.2091 34 22 34H6C3.79086 34 2 32.2091 2 30V12Z" />
+                  </svg>
+                  </button></td>
+                  <td><a href="institution-detail.html" class="prototype"><button class="secondary"> Details</button></a></td>
+                  </tr>
+                  <tr>
+                     <td><img src="img/aib.png" alt="Allied Irish Bank Business"></td>
+                     <td>AIB Sandbox</td>
+                     <td><a href="institution-detail.html">32 countries</a></td>
+                     <td>allied-institution</td>
+                     <td>
+                        <div class="tooltip">
+                           <div >β Beta</div>
+                           <span class="tooltiptext">Not tested with live accounts</span>
+                        </div>
+                     </td>
+                     <td>
+                        <div >🧪 Sandbox</div>
+                     </td>
+                     <td>
+                        <button class="secondary icon-only ">
+                           <svg viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0623 9.89978L22.8196 5.65714L2.38195 26.0948L2.18929 25.9021L2.12086 30.2132L6.43193 30.1448L6.62459 30.3374L27.0623 9.89978Z" />
+                              <path d="M27.5771 0.899734C27.9676 0.509209 28.6008 0.509209 28.9913 0.899734L31.8197 3.72816C32.2102 4.11868 32.2102 4.75185 31.8197 5.14237L29.6984 7.26369L25.4558 3.02105L27.5771 0.899734Z" />
+                           </svg>
+                        </button>
+                     </td>
+                     <td>
+                        <button class="secondary icon-only">
+                           <svg  viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0H6V4H0V8H28V4H22V0Z" />
+                              <path d="M2 12H26V30C26 32.2091 24.2091 34 22 34H6C3.79086 34 2 32.2091 2 30V12Z" />
+                           </svg>
+                        </button>
+                        </a>
+                     </td>
+                     <td><a href="institution-detail.html" class="prototype"><button class="secondary"> Details</button></a></td>
+                  </tr>
+                  <tr>
+                     <td><img src="img/amex.png" alt="American express"></td>
+                     <td>Amex</td>
+                     <td><a href="">2 countries</a></td>
+                     <td>amex</td>
+                     <td>
+                        <div class="tooltip">
+                           <div >β Beta</div>
+                           <span class="tooltiptext">Not tested with live accounts</span>
+                        </div>
+                     </td>
+                     <td>
+                        <div >🚀 Production</div>
+                     </td>
+                     <td>
+                        <button class="secondary icon-only ">
+                           <svg viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0623 9.89978L22.8196 5.65714L2.38195 26.0948L2.18929 25.9021L2.12086 30.2132L6.43193 30.1448L6.62459 30.3374L27.0623 9.89978Z" />
+                              <path d="M27.5771 0.899734C27.9676 0.509209 28.6008 0.509209 28.9913 0.899734L31.8197 3.72816C32.2102 4.11868 32.2102 4.75185 31.8197 5.14237L29.6984 7.26369L25.4558 3.02105L27.5771 0.899734Z" />
+                           </svg>
+                        </button>
+                     </td>
+                     <td>
+                        <button class="secondary icon-only">
+                           <svg  viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0H6V4H0V8H28V4H22V0Z" />
+                              <path d="M2 12H26V30C26 32.2091 24.2091 34 22 34H6C3.79086 34 2 32.2091 2 30V12Z" />
+                           </svg>
+                        </button>
+                     </td>
+                     <td><button class="secondary"> Details</button></td>
+                  </tr>
+                  <tr>
+                     <td><img src="img/bnl.png" alt="logo-Banca Nazionale del Lavoro"></td>
+                     <td>BNL</td>
+                     <td><a href="">9 countries</a></td>
+                     <td>bnl</td>
+                     <td>
+                        <div class="tooltip">
+                           <div >β Beta</div>
+                           <span class="tooltiptext">Not tested with live accounts</span>
+                        </div>
+                     </td>
+                     <td>
+                        <div >🚀 Production</div>
+                     </td>
+                     <td>
+                        <button class="secondary icon-only ">
+                           <svg viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0623 9.89978L22.8196 5.65714L2.38195 26.0948L2.18929 25.9021L2.12086 30.2132L6.43193 30.1448L6.62459 30.3374L27.0623 9.89978Z" />
+                              <path d="M27.5771 0.899734C27.9676 0.509209 28.6008 0.509209 28.9913 0.899734L31.8197 3.72816C32.2102 4.11868 32.2102 4.75185 31.8197 5.14237L29.6984 7.26369L25.4558 3.02105L27.5771 0.899734Z" />
+                           </svg>
+                        </button>
+                     </td>
+                     <td>
+                        <button class="secondary icon-only">
+                           <svg  viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0H6V4H0V8H28V4H22V0Z" />
+                              <path d="M2 12H26V30C26 32.2091 24.2091 34 22 34H6C3.79086 34 2 32.2091 2 30V12Z" />
+                           </svg>
+                        </button>
+                     </td>
+                     <td><button class="secondary"> Details</button></td>
+                  </tr>
+                  <tr>
+                     <td><img src="img/sardegna.png" alt="logo-Banco Sardegna"></td>
+                     <td>Banco di Sardegna</td>
+                     <td><a href="">5 countries</a></td>
+                     <td>sardegna</td>
+                     <td>
+                        <div class="tooltip">
+                           <div >β Beta</div>
+                           <span class="tooltiptext">Not tested with live accounts</span>
+                        </div>
+                     </td>
+                     <td>
+                        <div >🚀 Production</div>
+                     </td>
+                     <td>
+                        <button class="secondary icon-only ">
+                           <svg viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0623 9.89978L22.8196 5.65714L2.38195 26.0948L2.18929 25.9021L2.12086 30.2132L6.43193 30.1448L6.62459 30.3374L27.0623 9.89978Z" />
+                              <path d="M27.5771 0.899734C27.9676 0.509209 28.6008 0.509209 28.9913 0.899734L31.8197 3.72816C32.2102 4.11868 32.2102 4.75185 31.8197 5.14237L29.6984 7.26369L25.4558 3.02105L27.5771 0.899734Z" />
+                           </svg>
+                        </button>
+                     </td>
+                     <td>
+                        <button class="secondary icon-only">
+                           <svg  viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0H6V4H0V8H28V4H22V0Z" />
+                              <path d="M2 12H26V30C26 32.2091 24.2091 34 22 34H6C3.79086 34 2 32.2091 2 30V12Z" />
+                           </svg>
+                        </button>
+                     </td>
+                     <td><button class="secondary"> Details</button></td>
+                  </tr>
+               </table>
+               <div class="pagination flex light-text margin-bottom-big justify-flex-end">
+
+                  <div class="pages "><button class="secondary disabled">&larr;</button> <span class="current-number">2 of 400</span><button class="secondary">&rarr;</button>
+                  </div>
+               </div>
+            </div>
+            <!--end content 2-->
+            <div id="Content3" class=" tabcontent">
+               <div class="subgrid2">
+                  <div class="card column-equal special">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="margin-bottom-normal">
+    <rect width="48" height="48" rx="10" fill="#FAC601"/>
+    <rect width="48" height="48" rx="10" fill="#FAC601"/>
+    <path d="M30.1732 17.7296L21.8237 26.0791L19.457 23.7145C27.6778 15.4976 28.4938 16.2205 30.1732 17.7296Z" fill="black" />
+    <path d="M21.8247 26.2791C21.7985 26.279 21.7726 26.2737 21.7485 26.2635C21.7243 26.2533 21.7025 26.2384 21.6841 26.2197L19.3076 23.8431C19.2707 23.806 19.25 23.7558 19.25 23.7035C19.25 23.6512 19.2707 23.601 19.3076 23.5639C27.6651 15.2064 28.5444 15.9966 30.2971 17.5711C30.3171 17.5891 30.3332 17.6111 30.3445 17.6356C30.3557 17.6601 30.3618 17.6867 30.3624 17.7137C30.3634 17.7407 30.3588 17.7677 30.3489 17.7929C30.339 17.8181 30.3241 17.841 30.305 17.8602L21.9634 26.2197C21.9268 26.257 21.877 26.2783 21.8247 26.2791V26.2791ZM19.7393 23.7045L21.8247 25.7958L29.8871 17.7335C28.4236 16.4402 27.4294 16.0382 19.7393 23.7144V23.7045Z" fill="#F9C533"/>
+    <path d="M24.217 28.4733L21.9355 26.1919L30.2871 17.8403C32.5349 20.0901 29.2018 23.7579 24.217 28.4733Z" fill="black"/>
+    <path d="M24.2178 28.6715H24.2079C24.1578 28.6675 24.1108 28.6457 24.0752 28.6101L21.7957 26.3326C21.7595 26.2947 21.739 26.2445 21.7383 26.192C21.7381 26.166 21.7431 26.1401 21.753 26.116C21.7628 26.0919 21.7774 26.0699 21.7957 26.0514L30.1472 17.7019C30.1843 17.665 30.2345 17.6443 30.2869 17.6443C30.3392 17.6443 30.3894 17.665 30.4265 17.7019C30.6765 17.9394 30.8744 18.2263 31.0077 18.5444C31.141 18.8625 31.2068 19.2048 31.2008 19.5496C31.1691 21.7459 28.6679 24.5364 24.3544 28.6161C24.3177 28.6515 24.2688 28.6713 24.2178 28.6715V28.6715ZM22.2176 26.192C23.4949 27.4714 24.0118 27.9863 24.2218 28.1962C27.5568 25.0275 30.7731 21.7816 30.8047 19.5457C30.8181 19.023 30.6311 18.5149 30.2819 18.1257L22.2176 26.192Z" fill="#F9C533"/>
+    <path d="M19.5161 23.7718L21.2015 25.4552C21.2118 25.4656 21.2191 25.4786 21.2226 25.4928C21.2261 25.507 21.2257 25.5219 21.2214 25.5359C21.2172 25.5499 21.2092 25.5625 21.1984 25.5723C21.1875 25.5822 21.1743 25.5889 21.1599 25.5918L17.6842 26.3404C17.6152 26.3557 17.543 26.3481 17.4786 26.3188C17.4142 26.2895 17.3611 26.2401 17.3272 26.1781C17.2932 26.116 17.2804 26.0446 17.2905 25.9746C17.3006 25.9046 17.3331 25.8398 17.3832 25.7899L19.4092 23.7718C19.424 23.7588 19.443 23.7517 19.4627 23.7517C19.4823 23.7517 19.5013 23.7588 19.5161 23.7718V23.7718Z" fill="black"/>
+    <path d="M17.6131 26.5466C17.5093 26.5463 17.4079 26.5152 17.3218 26.4573C17.2356 26.3993 17.1686 26.3171 17.1292 26.2211C17.0897 26.1251 17.0797 26.0195 17.1003 25.9177C17.1208 25.816 17.1711 25.7226 17.2448 25.6494L19.2609 23.6314C19.3135 23.5791 19.3847 23.5498 19.4589 23.5498C19.5331 23.5498 19.6043 23.5791 19.657 23.6314L21.3403 25.3167C21.3762 25.352 21.4018 25.3963 21.4144 25.445C21.427 25.4936 21.4262 25.5448 21.4119 25.593C21.3977 25.6412 21.3706 25.6847 21.3336 25.7187C21.2965 25.7527 21.251 25.776 21.2017 25.7861L17.726 26.5347C17.6889 26.5426 17.6511 26.5465 17.6131 26.5466V26.5466ZM19.4589 23.9938L17.524 25.9287C17.5034 25.9481 17.49 25.974 17.486 26.0021C17.4821 26.0302 17.4878 26.0588 17.5022 26.0832C17.5146 26.1084 17.5354 26.1286 17.5611 26.1402C17.5868 26.1518 17.6157 26.154 17.6429 26.1465L20.9086 25.4435L19.4589 23.9938Z" fill="#F9C533"/>
+    <path d="M34.6042 13.0932C34.1729 12.6789 33.6344 12.3935 33.0494 12.2693C32.4645 12.1451 31.8564 12.1871 31.2941 12.3905C30.7317 12.5939 30.2375 12.9507 29.8674 13.4203C29.4972 13.89 29.2659 14.4539 29.1995 15.0482C29.1331 15.6425 29.2344 16.2435 29.4918 16.7833C29.7492 17.323 30.1526 17.78 30.6562 18.1024C31.1598 18.4249 31.7436 18.6 32.3416 18.6079C32.9395 18.6158 33.5277 18.4563 34.0397 18.1473L31.7939 15.9034L34.6042 13.0932Z" fill="black"/>
+    <path d="M32.3801 18.8088C31.823 18.8089 31.2744 18.6724 30.7824 18.4111C30.2903 18.1499 29.87 17.7718 29.5581 17.3102C29.2462 16.8486 29.0524 16.3175 28.9936 15.7635C28.9348 15.2096 29.0129 14.6496 29.221 14.1328C29.4291 13.6161 29.7608 13.1583 30.187 12.7996C30.6133 12.4409 31.121 12.1923 31.6658 12.0755C32.2105 11.9588 32.7755 11.9776 33.3113 12.1302C33.8471 12.2827 34.3373 12.5644 34.7388 12.9506C34.7579 12.9688 34.7731 12.9906 34.7837 13.0147C34.7942 13.0389 34.7999 13.0649 34.8002 13.0912C34.8006 13.1176 34.7958 13.1438 34.7859 13.1683C34.776 13.1928 34.7614 13.2151 34.7428 13.2338L32.0831 15.9034L34.1883 18.0067C34.2094 18.0281 34.2253 18.054 34.2349 18.0825C34.2445 18.111 34.2476 18.1412 34.2437 18.1711C34.2401 18.2011 34.2297 18.23 34.2132 18.2554C34.1967 18.2808 34.1746 18.3021 34.1487 18.3176C33.6151 18.64 33.0034 18.8098 32.3801 18.8088V18.8088ZM32.3801 12.404C31.9281 12.4044 31.4819 12.5068 31.075 12.7037C30.668 12.9005 30.3108 13.1868 30.0299 13.541C29.749 13.8952 29.5518 14.3083 29.4529 14.7494C29.354 15.1905 29.3559 15.6483 29.4586 16.0885C29.5613 16.5288 29.7622 16.9401 30.0461 17.2919C30.33 17.6437 30.6897 17.9269 31.0983 18.1202C31.5069 18.3136 31.9539 18.4122 32.406 18.4086C32.858 18.4051 33.3034 18.2995 33.709 18.0998L31.6533 16.0421C31.616 16.0055 31.5946 15.9557 31.5939 15.9034C31.594 15.8772 31.5993 15.8513 31.6095 15.8272C31.6197 15.8031 31.6346 15.7812 31.6533 15.7628L34.315 13.1011C33.7725 12.6491 33.0882 12.4023 32.3821 12.404H32.3801Z" fill="#F9C533"/>
+    <path d="M34.6587 13.1368L34.6092 13.0933L31.793 15.9035L34.0388 18.1473C34.264 18.0163 34.4722 17.858 34.6587 17.676C34.9569 17.378 35.1934 17.0242 35.3548 16.6348C35.5163 16.2454 35.5993 15.828 35.5993 15.4064C35.5993 14.9849 35.5163 14.5674 35.3548 14.178C35.1934 13.7886 34.9569 13.4348 34.6587 13.1368V13.1368Z" fill="black"/>
+    <path d="M34.0396 18.3453C34.0135 18.3455 33.9877 18.3405 33.9635 18.3306C33.9394 18.3208 33.9175 18.3063 33.899 18.2879L31.6551 16.0421C31.6178 16.0055 31.5964 15.9557 31.5957 15.9035C31.5958 15.8773 31.6011 15.8513 31.6113 15.8272C31.6215 15.8031 31.6364 15.7812 31.6551 15.7629L34.4614 12.9526C34.4984 12.9163 34.5482 12.896 34.6 12.896C34.6519 12.896 34.7016 12.9163 34.7387 12.9526L34.7902 12.9982C35.1567 13.363 35.435 13.8066 35.604 14.2953C35.773 14.7841 35.8282 15.3049 35.7654 15.8182C35.7025 16.3315 35.5233 16.8236 35.2414 17.2571C34.9595 17.6906 34.5823 18.054 34.1386 18.3196C34.1084 18.3367 34.0743 18.3456 34.0396 18.3453V18.3453ZM32.0849 15.9035L34.0653 17.8958C34.2247 17.7883 34.3739 17.6663 34.5109 17.5314C35.0589 16.9834 35.3742 16.245 35.3912 15.4702C35.4081 14.6954 35.1255 13.944 34.602 13.3725L32.0849 15.9035Z" fill="#F9C533"/>
+    <path d="M30.5174 18.0722C30.2884 17.844 29.9783 17.7158 29.6549 17.7158C29.3316 17.7158 29.0215 17.844 28.7925 18.0722L21.3242 25.5424L22.5759 26.7861L30.4699 19.8546C30.5951 19.7437 30.6962 19.6083 30.7668 19.4568C30.8375 19.3053 30.8763 19.1408 30.8807 18.9737C30.8852 18.8065 30.8552 18.6403 30.7927 18.4852C30.7302 18.3301 30.6365 18.1895 30.5174 18.0722V18.0722Z" fill="black"/>
+    <path d="M22.5777 26.9843C22.5516 26.9844 22.5258 26.9794 22.5017 26.9696C22.4775 26.9597 22.4556 26.9452 22.4371 26.9268L21.1914 25.6831C21.1728 25.6647 21.1581 25.6428 21.148 25.6187C21.138 25.5945 21.1328 25.5686 21.1328 25.5425C21.1328 25.5163 21.138 25.4905 21.148 25.4663C21.1581 25.4422 21.1728 25.4203 21.1914 25.4019L28.6537 17.9336C28.9202 17.6684 29.2808 17.5195 29.6568 17.5195C30.0327 17.5195 30.3934 17.6684 30.6599 17.9336C30.7969 18.0706 30.9043 18.2342 30.9755 18.4144C31.0467 18.5946 31.0802 18.7874 31.0739 18.981C31.0675 19.1746 31.0216 19.3649 30.9388 19.54C30.856 19.7152 30.7382 19.8715 30.5925 19.9992L22.6985 26.9308C22.6655 26.9619 22.6229 26.9808 22.5777 26.9843V26.9843ZM21.6152 25.5445L22.5856 26.5149L30.341 19.7042C30.4464 19.6145 30.5325 19.5044 30.5941 19.3805C30.6557 19.2566 30.6915 19.1215 30.6993 18.9833C30.7071 18.8452 30.6868 18.7069 30.6395 18.5769C30.5923 18.4468 30.5192 18.3277 30.4245 18.2268C30.3299 18.1258 30.2158 18.0451 30.089 17.9896C29.9623 17.9341 29.8256 17.9049 29.6872 17.9038C29.5489 17.9027 29.4117 17.9297 29.2841 17.9832C29.1565 18.0366 29.0411 18.1155 28.9448 18.2149L21.6152 25.5445Z" fill="#F9C533"/>
+    <path d="M15.5984 34.0306C15.5633 34.0488 15.5352 34.0781 15.5184 34.1139C15.5016 34.1497 15.497 34.19 15.5053 34.2287L15.84 35.6585C15.8697 35.7463 15.8676 35.8418 15.8342 35.9282C15.8008 36.0147 15.7381 36.0866 15.6571 36.1316C15.576 36.1766 15.4818 36.1918 15.3907 36.1745C15.2997 36.1571 15.2176 36.1084 15.1588 36.0368L12.9941 33.8722L20.1019 26.7664L22.5478 26.804L24.2173 28.4715C23.8034 28.8181 21.409 31.1174 15.5984 34.0306V34.0306Z" fill="black"/>
+    <path d="M15.4487 36.3575C15.3697 36.3574 15.2916 36.3416 15.2188 36.311C15.1461 36.2804 15.0801 36.2356 15.0249 36.1792L12.8543 34.0126C12.8177 33.9757 12.7971 33.9259 12.7969 33.874C12.7967 33.8479 12.8017 33.8221 12.8116 33.798C12.8214 33.7738 12.836 33.7519 12.8543 33.7334L19.9621 26.6256C19.9809 26.607 20.0031 26.5923 20.0276 26.5825C20.0521 26.5726 20.0783 26.5677 20.1047 26.5681L22.5525 26.6058C22.6038 26.6065 22.6528 26.6271 22.6892 26.6632L24.3567 28.3327C24.3764 28.352 24.3919 28.3751 24.4021 28.4007C24.4123 28.4263 24.4171 28.4537 24.4161 28.4812C24.4148 28.5087 24.4077 28.5355 24.3955 28.56C24.3832 28.5846 24.3659 28.6063 24.3448 28.6238L24.2042 28.7466C22.1089 30.5865 19.2531 32.4203 15.7022 34.1988L16.0349 35.6148C16.0665 35.7427 16.0546 35.8775 16.0012 35.998C15.9478 36.1185 15.8558 36.2177 15.7398 36.2802C15.6508 36.33 15.5507 36.3565 15.4487 36.3575V36.3575ZM13.2702 33.874L15.3002 35.896C15.3264 35.9422 15.37 35.9761 15.4212 35.9903C15.4725 36.0044 15.5272 35.9975 15.5735 35.9713C15.6197 35.945 15.6536 35.9015 15.6677 35.8502C15.6818 35.799 15.675 35.7442 15.6487 35.698L15.314 34.2681C15.2948 34.1858 15.304 34.0994 15.3399 34.0228C15.3758 33.9463 15.4365 33.8841 15.5121 33.8463C19.0254 32.0837 21.8495 30.2696 23.9289 28.4535L22.4674 26.992L20.1839 26.9563L13.2702 33.874Z" fill="#F9C533"/>
+    <path d="M11.2895 35.5752L12.9907 33.874L15.5197 36.403L11.4796 36.1258C11.4191 36.1189 11.3617 36.095 11.3142 36.0569C11.2667 36.0188 11.2309 35.968 11.211 35.9104C11.1912 35.8528 11.188 35.7908 11.2019 35.7315C11.2157 35.6722 11.2461 35.618 11.2895 35.5752Z" fill="black"/>
+    <path d="M15.5234 36.6011H15.5115L11.4694 36.3238C11.3712 36.3137 11.2778 36.276 11.2 36.215C11.1223 36.154 11.0635 36.0723 11.0303 35.9792C10.9972 35.8862 10.9911 35.7856 11.0127 35.6892C11.0343 35.5928 11.0828 35.5045 11.1526 35.4346L12.8538 33.7334C12.8722 33.7148 12.8941 33.7001 12.9182 33.69C12.9423 33.68 12.9682 33.6748 12.9944 33.6748C13.0205 33.6748 13.0464 33.68 13.0705 33.69C13.0947 33.7001 13.1166 33.7148 13.135 33.7334L15.664 36.2624C15.6931 36.2909 15.7127 36.3277 15.7202 36.3677C15.7276 36.4078 15.7225 36.4491 15.7056 36.4862C15.6895 36.5209 15.6638 36.5502 15.6315 36.5706C15.5991 36.591 15.5616 36.6015 15.5234 36.6011V36.6011ZM12.9944 34.1532L11.4338 35.7138C11.4164 35.7302 11.4041 35.7512 11.3984 35.7745C11.3928 35.7977 11.3941 35.822 11.4021 35.8445C11.4096 35.8673 11.4234 35.8875 11.442 35.9026C11.4607 35.9177 11.4832 35.9271 11.5071 35.9297L15.0105 36.1693L12.9944 34.1532Z" fill="#F9C533"/>
+    <path d="M19.3808 27.683C19.3419 27.6829 19.3039 27.6712 19.2715 27.6496C19.2392 27.6279 19.2139 27.5972 19.1989 27.5613C19.1839 27.5254 19.1798 27.4858 19.1872 27.4476C19.1945 27.4094 19.213 27.3742 19.2402 27.3464L21.1652 25.4214C21.1836 25.4028 21.2055 25.3881 21.2296 25.378C21.2538 25.368 21.2797 25.3628 21.3058 25.3628C21.332 25.3628 21.3578 25.368 21.382 25.378C21.4061 25.3881 21.428 25.4028 21.4464 25.4214L22.6862 26.6631C22.712 26.6883 22.7304 26.7201 22.7395 26.755C22.7486 26.7899 22.7479 26.8266 22.7377 26.8612C22.7274 26.8952 22.7082 26.9258 22.6821 26.9498C22.656 26.9739 22.6239 26.9904 22.5891 26.9978L19.4204 27.6811C19.4074 27.6835 19.3941 27.6842 19.3808 27.683V27.683ZM21.3058 25.8412L20.0027 27.1503L22.1554 26.6849L21.3058 25.8412Z" fill="#F9C533"/>
+    <path d="M22.5471 26.8037L20.3686 27.2711C20.3052 27.2854 20.2388 27.2786 20.1796 27.2518C20.1204 27.225 20.0715 27.1796 20.0404 27.1225C20.0093 27.0654 19.9976 26.9998 20.0072 26.9354C20.0167 26.8711 20.0469 26.8117 20.0933 26.7661L21.2974 25.562L22.5471 26.8037Z" fill="black"/>
+    <path d="M20.3116 27.4751C20.2132 27.4751 20.1169 27.4459 20.0351 27.3911C19.9533 27.3364 19.8896 27.2586 19.852 27.1676C19.8145 27.0766 19.8048 26.9765 19.8242 26.88C19.8436 26.7835 19.8913 26.6949 19.9611 26.6255L21.1652 25.4214C21.1836 25.4028 21.2055 25.3881 21.2296 25.378C21.2538 25.368 21.2796 25.3628 21.3058 25.3628C21.3319 25.3628 21.3578 25.368 21.382 25.378C21.4061 25.3881 21.428 25.4028 21.4464 25.4214L22.6862 26.6631C22.712 26.6883 22.7304 26.7201 22.7395 26.755C22.7485 26.7899 22.7479 26.8266 22.7377 26.8612C22.7274 26.8952 22.7082 26.9258 22.6821 26.9498C22.656 26.9739 22.6239 26.9904 22.5891 26.9978L20.4106 27.4672C20.378 27.4732 20.3448 27.4758 20.3116 27.4751ZM21.3018 25.8412L20.2364 26.9047C20.2203 26.92 20.21 26.9404 20.2071 26.9623C20.2042 26.9843 20.209 27.0066 20.2205 27.0255C20.2293 27.0463 20.2455 27.0631 20.266 27.0726C20.2865 27.0822 20.3098 27.0837 20.3314 27.077L22.1455 26.6809L21.3018 25.8412Z" fill="#F9C533"/>
+    <path d="M34.6709 15.0399C34.6608 15.0087 34.6441 14.9801 34.6219 14.9559C34.5998 14.9317 34.5727 14.9126 34.5426 14.8997C34.5124 14.8869 34.4799 14.8806 34.4471 14.8814C34.4143 14.8822 34.3821 14.89 34.3526 14.9042C34.323 14.9185 34.2969 14.9389 34.2759 14.9641C34.255 14.9893 34.2396 15.0187 34.231 15.0503C34.2223 15.0819 34.2205 15.115 34.2256 15.1474C34.2308 15.1797 34.2429 15.2106 34.261 15.2379C34.3199 15.3571 34.3432 15.4907 34.3281 15.6228C34.313 15.7549 34.2601 15.8798 34.1758 15.9826C34.1371 16.0294 34.1184 16.0896 34.124 16.1501C34.1296 16.2106 34.1589 16.2665 34.2055 16.3054C34.2528 16.3434 34.313 16.3614 34.3734 16.3555C34.4337 16.3495 34.4894 16.3202 34.5283 16.2737C34.6681 16.1035 34.7559 15.8966 34.7811 15.6778C34.8064 15.459 34.7682 15.2375 34.6709 15.0399V15.0399Z" fill="#F9C533"/>
+    </svg>
+
+
+                     <h2>Postman</h2>
+                     <p>This is an auto-generated <a href="">Postman</a> collection configured for your application.
+                        <a href="">See our wiki guide</a> for details on how to use it.
+                     </p>
+                     <button class="secondary">Download collection</button>
+                  </div>
+                  <div class="card  column-equal">
+                     <div>
+                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="margin-bottom-normal">
+         <rect width="48" height="48" rx="10" fill="#FAC601"/>
+         <path fill-rule="evenodd" clip-rule="evenodd" d="M28.3383 13.743C28.8324 13.743 29.2329 13.3528 29.2329 12.8715C29.2329 12.3902 28.8324 12 28.3383 12C27.8443 12 27.4438 12.3902 27.4438 12.8715C27.4438 13.3528 27.8443 13.743 28.3383 13.743ZM26.6487 15.0987C26.6487 15.7405 26.1147 16.2608 25.456 16.2608C24.7973 16.2608 24.2633 15.7405 24.2633 15.0987C24.2633 14.457 24.7973 13.9367 25.456 13.9367C26.1147 13.9367 26.6487 14.457 26.6487 15.0987ZM28.2389 18.1975H20.2876V20.5215H21.8779V26.8709L16 36.7898H32.5265L26.6487 26.8709V20.5215H28.2389V18.1975Z" fill="black"/>
+         </svg>
+
+
+                        <h2>Simulator</h2>
+                        <div>
+                           <p>Simulator is a testing web application that contains some of the banking features for you to test your application configuration.
+
+It uses your application API credentials and lists all of your selected institutions.
+
+</p>
+
+                           <p class="margin-bottom-big">
+                              In order to work a new callback will be added to your <a href="application-settings.html">application settings</a> when enabling:
+                           </p>
+                        </div>
+                        <div class="subgrid2">
+                           <div class="width-100">
+                              <label class="container">Enable
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                              </label>
+                           </div>
+                           <div >
+                              <a href="demo2.html" class="prototype" target="_blank" rel= "noopener">  <button class="secondary width-100">Go to simulator</button></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--end of Content3-->
+            <div id="Content4" class="panel tabcontent">
+               <h1>Analytics</h1>
+               <div class="margin-bottom-huge ">
+                 <div class="margin-bottom-normal">
+                   <div class="row">
+                  <div class="row">
+                     <label>
+                        From </label><input type="date"> <input type="time">
+                  </div>
+                  <div class="row ">
+                  <label>To</label> <input type="date"> <input type="time">
+                  </div>
+                </div>
+
+               <div class="row">    <select><option>Select Bank</option>
+                 <option>AIB</option>
+               </select>
+               </div>
+  </div>
+                </div>
+               <!--end of date-->
+               <div class="margin-bottom-huge subgrid4">
+                  <div class="small-kpi">
+                     <small>Total requests</small>
+                     <h3>54</h3>
+                     <svg width="148" height="53" viewBox="0 0 148 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.00026359 0L148 53H0L0.00026359 0Z" fill="#F9C533"/>
+                     </svg>
+                  </div>
+                  <div class="small-kpi">
+                     <small>Response code 2xx</small>
+                     <h3>14</h3>
+                     <svg width="148" height="53" viewBox="0 0 148 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.00026359 0L148 53H0L0.00026359 0Z" fill="#F9C533"/>
+                     </svg>
+                  </div>
+                  <div class="small-kpi">
+                     <small>Response code 4xx</small>
+                     <h3>4</h3>
+                     <svg width="148" height="53" viewBox="0 0 148 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.00026359 0L148 53H0L0.00026359 0Z" fill="#F9C533"/>
+                     </svg>
+                  </div>
+                  <div class="small-kpi">
+                     <small>Response code 5xx</small>
+                     <h3>24</h3>
+                     <svg width="148" height="53" viewBox="0 0 148 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.00026359 0L148 53H0L0.00026359 0Z" fill="#F9C533"/>
+                     </svg>
+                  </div>
+               </div>
+               <!--kpis-->
+               <div class="graphic margin-bottom-huge">
+                  <svg width="915" height="377" viewBox="0 0 915 377" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M7.03967 19.128C9.47167 19.128 11.1517 17.608 11.1517 15.336C11.1517 13.064 9.55167 11.496 7.21567 11.496C6.36767 11.496 5.43967 11.896 4.89567 12.408L5.39167 9.032H10.3517V7.8H4.35167L3.48767 13.992H4.60767C4.94367 13.176 5.82367 12.68 7.05567 12.68C8.68767 12.68 9.74367 13.736 9.74367 15.336C9.74367 16.936 8.68767 17.896 7.03967 17.896C5.67967 17.896 4.75167 17.16 4.57567 15.848H3.26367C3.45567 17.736 4.99167 19.128 7.03967 19.128Z" fill="black"/>
+                     <path d="M16.4902 19.128H17.0502C19.7862 19.128 20.8742 17.272 20.8742 13.848V12.952C20.8742 9.528 19.7862 7.672 17.0502 7.672H16.4902C13.7862 7.672 12.6822 9.528 12.6822 12.952V13.848C12.6822 17.272 13.7862 19.128 16.4902 19.128ZM16.5382 17.896C14.7942 17.896 14.0582 16.6 14.0582 14.008V12.792C14.0582 10.2 14.7942 8.904 16.5382 8.904H17.0342C18.7782 8.904 19.5142 10.2 19.5142 12.792V14.008C19.5142 16.6 18.7782 17.896 17.0342 17.896H16.5382Z" fill="black"/>
+                     <path d="M11.7089 343.128H12.2689C15.0049 343.128 16.0929 341.272 16.0929 337.848V336.952C16.0929 333.528 15.0049 331.672 12.2689 331.672H11.7089C9.00488 331.672 7.90088 333.528 7.90088 336.952V337.848C7.90088 341.272 9.00488 343.128 11.7089 343.128ZM11.7569 341.896C10.0129 341.896 9.27688 340.6 9.27688 338.008V336.792C9.27688 334.2 10.0129 332.904 11.7569 332.904H12.2529C13.9969 332.904 14.7329 334.2 14.7329 336.792V338.008C14.7329 340.6 13.9969 341.896 12.2529 341.896H11.7569Z" fill="black"/>
+                     <path d="M35.5 342.5L35.5016 1.73075L912.333 342.5H35.5Z" fill="#F9C533" stroke="#FAFBFF"/>
+                     <line x1="379.5" y1="1" x2="379.5" y2="343" stroke="#FAFBFF"/>
+                     <line x1="35" y1="0.5" x2="915" y2="0.5" stroke="#D6E0E9"/>
+                     <line x1="35" y1="171.5" x2="915" y2="171.5" stroke="#FAFBFF"/>
+                     <line x1="35" y1="92.5" x2="915" y2="92.5" stroke="#D6E0E9"/>
+                     <line x1="35" y1="245.5" x2="915" y2="245.5" stroke="#D6E0E9"/>
+                     <path d="M347.452 374.768V376H348.94C350.444 376 351.276 375.024 351.276 373.168V364.8H349.916V373.136C349.916 374.208 349.548 374.768 348.844 374.768H347.452Z" fill="black"/>
+                     <path d="M356.371 367.808C354.563 367.808 353.091 368.96 352.947 370.512H354.163C354.227 369.632 355.155 368.896 356.339 368.896C357.715 368.896 358.499 369.648 358.499 370.752C358.499 371.008 358.339 371.184 357.987 371.184H356.163C354.211 371.184 352.947 372.16 352.947 373.696C352.947 375.168 354.051 376.128 355.747 376.128C356.995 376.128 358.067 375.536 358.499 374.608V376H359.779V370.8C359.779 369.008 358.467 367.808 356.371 367.808ZM355.939 375.04C354.915 375.04 354.259 374.512 354.259 373.68C354.259 372.736 355.043 372.16 356.243 372.16H358.499V372.368C358.499 374.032 357.555 375.04 355.939 375.04Z" fill="black"/>
+                     <path d="M361.673 376H362.953V371.648C362.953 370.08 363.945 368.976 365.321 368.976C366.537 368.976 367.337 369.904 367.337 371.28V376H368.617V371.072C368.617 369.104 367.433 367.808 365.609 367.808C364.377 367.808 363.369 368.368 362.953 369.488V367.936H361.673V376Z" fill="black"/>
+                     <path d="M374.5 368.432H375.908C375.844 366.896 376.756 365.872 378.196 365.872C379.476 365.872 380.42 366.704 380.42 367.984C380.42 368.96 379.988 369.728 378.788 370.336L377.076 371.216C375.924 371.792 374.356 373.024 374.356 375.024V376H381.892V374.768H375.684C375.684 373.68 376.708 372.832 377.62 372.368L379.22 371.552C380.932 370.704 381.828 369.472 381.828 368.016C381.828 365.984 380.308 364.672 378.196 364.672C375.892 364.672 374.42 366.144 374.5 368.432Z" fill="black"/>
+                     <path d="M387.021 376.128H387.581C390.317 376.128 391.405 374.272 391.405 370.848V369.952C391.405 366.528 390.317 364.672 387.581 364.672H387.021C384.317 364.672 383.213 366.528 383.213 369.952V370.848C383.213 374.272 384.317 376.128 387.021 376.128ZM387.069 374.896C385.325 374.896 384.589 373.6 384.589 371.008V369.792C384.589 367.2 385.325 365.904 387.069 365.904H387.565C389.309 365.904 390.045 367.2 390.045 369.792V371.008C390.045 373.6 389.309 374.896 387.565 374.896H387.069Z" fill="black"/>
+                     <path d="M393.157 368.432H394.565C394.501 366.896 395.413 365.872 396.853 365.872C398.133 365.872 399.077 366.704 399.077 367.984C399.077 368.96 398.645 369.728 397.445 370.336L395.733 371.216C394.581 371.792 393.013 373.024 393.013 375.024V376H400.549V374.768H394.341C394.341 373.68 395.365 372.832 396.277 372.368L397.877 371.552C399.589 370.704 400.485 369.472 400.485 368.016C400.485 365.984 398.965 364.672 396.853 364.672C394.549 364.672 393.077 366.144 393.157 368.432Z" fill="black"/>
+                     <path d="M405.678 376.128H406.238C408.974 376.128 410.062 374.272 410.062 370.848V369.952C410.062 366.528 408.974 364.672 406.238 364.672H405.678C402.974 364.672 401.87 366.528 401.87 369.952V370.848C401.87 374.272 402.974 376.128 405.678 376.128ZM405.726 374.896C403.982 374.896 403.246 373.6 403.246 371.008V369.792C403.246 367.2 403.982 365.904 405.726 365.904H406.222C407.966 365.904 408.702 367.2 408.702 369.792V371.008C408.702 373.6 407.966 374.896 406.222 374.896H405.726Z" fill="black"/>
+                     <path d="M4.37342 178.128C6.46942 178.128 8.32542 176.976 8.32542 174.832C8.32542 173.488 7.42942 172.496 6.26142 172.112C7.15742 171.712 7.87742 170.752 7.87742 169.616C7.87742 167.904 6.37342 166.672 4.29342 166.672C2.29342 166.672 0.837422 167.952 0.757422 169.984H2.08542C2.16542 168.656 2.99742 167.904 4.27742 167.904C5.62142 167.904 6.48542 168.56 6.48542 169.664C6.48542 170.784 5.68542 171.6 4.35742 171.6H3.47742V172.8H4.37342C5.94142 172.8 6.93342 173.504 6.93342 174.816C6.93342 176.144 5.94142 176.896 4.37342 176.896C2.85342 176.896 1.70142 175.936 1.70142 174.48H0.357422C0.357422 176.672 2.11742 178.128 4.37342 178.128Z" fill="black"/>
+                     <path d="M13.6803 178.128C16.1123 178.128 17.7923 176.608 17.7923 174.336C17.7923 172.064 16.1923 170.496 13.8563 170.496C13.0083 170.496 12.0803 170.896 11.5363 171.408L12.0323 168.032H16.9923V166.8H10.9923L10.1283 172.992H11.2483C11.5843 172.176 12.4643 171.68 13.6963 171.68C15.3283 171.68 16.3843 172.736 16.3843 174.336C16.3843 175.936 15.3283 176.896 13.6803 176.896C12.3203 176.896 11.3923 176.16 11.2163 174.848H9.9043C10.0963 176.736 11.6323 178.128 13.6803 178.128Z" fill="black"/>
+                  </svg>
+               </div>
+               <div>
+                  <table  id="myTable2" class="no-sort">
+                     <!--When a header is clicked, run the sortTable function, with a parameter,
+                        0 for sorting by names, 1 for sorting by country: -->
+                     <tr>
+                        <th >Endpoint</th>
+                        <th >200x</th>
+                        <th >300x</th>
+                        <th >400x</th>
+                        <th >500x</th>
+                     </tr>
+                     <tr>
+                        <td>/consents</td>
+                        <td>20</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>/me</td>
+                        <td>30</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>/payments</td>
+                        <td>17</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+            <!--end of Content4-->
+         </div>
+         <!--end of card-->
+      </main>
+      <script>
+         const Yapily = {};
+      </script>
+      <script src="js/tabs.js"></script>
+      <script src="js/modal.js"></script>
+      <script src="js/index2.js"></script>
+   </body>
+</html>

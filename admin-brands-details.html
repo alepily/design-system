@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head><meta name="robots" content="noindex">
+      <title>Admin</title>
+      <link rel="stylesheet" type="text/css" href="yapilyui.css">
+      <link rel="shortcut icon" href="icons/icon-48x48.png">
+      <script async="" src="js/back.js"></script>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+   </head>
+   <body class="fixed-width grid-dashboard quickstart" >
+      <header id="top" class="flex justify-space-between">
+         <div class="isologo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M26.7149 0.000520314C23.8356 0.0401149 21.5328 2.43464 21.571 5.34861L21.6184 8.87347C21.6259 9.49756 21.3894 10.099 20.9601 10.5468L20.7878 10.7259C20.3576 11.1756 19.7672 11.4339 19.1489 11.4415L18.6572 11.449L18.6581 11.4518C17.8433 10.922 16.8702 10.6185 15.8291 10.6317C14.937 10.6439 14.1017 10.8871 13.3754 11.3048C13.2143 11.2972 13.056 11.2831 12.893 11.285L12.8372 11.2859C12.2216 11.2944 11.6266 11.0559 11.1852 10.6203C10.7401 10.1839 10.4868 9.58712 10.4775 8.9602L10.4291 5.21192C10.39 2.29795 8.0247 -0.0343606 5.14447 0.00429122C2.26518 0.0429431 -0.03862 2.43841 0.000490693 5.35333C0.0386702 8.26824 2.40487 10.5996 5.28322 10.561L8.765 10.5138C9.38146 10.5053 9.97557 10.7448 10.4179 11.1803L10.5958 11.3538C11.039 11.7912 11.2932 12.3898 11.3016 13.0149L11.3091 13.5117C11.3109 13.5107 11.3128 13.5098 11.3146 13.5089C10.9627 14.2244 10.7662 15.0314 10.7764 15.8864C10.7904 16.9083 11.0995 17.8567 11.6154 18.6543C11.6145 18.7523 11.6043 18.8494 11.6043 18.9493L11.6052 19.005C11.6126 19.6291 11.377 20.2305 10.9468 20.6774C10.5166 21.1289 9.92622 21.3854 9.3079 21.3938L5.60635 21.4429C2.72613 21.4806 0.423258 23.876 0.461438 26.7919C0.499617 29.7078 2.86674 32.0382 5.7451 31.9995C8.62532 31.9618 10.9282 29.5654 10.8891 26.6495L10.8435 23.1256C10.8351 22.5025 11.0716 21.9001 11.5009 21.4523L11.6722 21.2741C12.1043 20.8235 12.6938 20.5661 13.313 20.5586L13.8028 20.552C13.8019 20.5482 13.7991 20.5435 13.7972 20.5388C14.4584 20.8414 15.1922 21.0101 15.9651 20.9988C18.7932 20.9611 21.0541 18.6081 21.0169 15.746C21.0104 15.2284 20.9266 14.7288 20.7804 14.2593C20.8279 13.8643 20.8595 13.4627 20.8549 13.0526V12.996C20.8474 12.3729 21.083 11.7705 21.5123 11.3236C21.9425 10.873 22.5329 10.6166 23.1521 10.6071L26.8546 10.5581C29.7339 10.5185 32.0377 8.124 31.9995 5.20815C31.9604 2.29323 29.5942 -0.040017 26.7149 0.000520314Z" fill="black"/>
+            </svg>
+            <em class="margin-left-normal">ADMIN</em> <span class="tag margin-left-normal internal">Staging</span>
+         </div>
+         <nav>
+            <a href="admin-institutions.html" class="current">Institutions</a>
+            <a href="admin-persons.html">People</a>
+            <a href="admin-applications.html">Applications</a>
+            <a href="admin-certficates.html" >Certificates</a>
+         </nav>
+         <div class="subnavMenu">
+            <div class="dropdown-nav ">
+               <a href="">Matt Richards &#9662;</a>
+               <div class="dropdown-content">
+                  <a href="admin-features.html">API Features</a>
+                  <a href="admin-safeconnect-copy.html">Copy registrations</a>
+                  <div>
+                  </div>
+                  <div class="menu-divider">
+                     <a href="login-admin.html">Logout</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main >
+
+         <div class="card slim-center">
+            <div class="row">
+               <h1>Allied Irish Group</h1>
+            </div>
+
+            <div id="Content1" class="  ">
+               <div>
+                  <div class="margin-bottom-huge">
+                     <h2>Customise</h2>
+
+                     <div class="margin-bottom-big">
+                        <label>Name</label>
+                        <input type="text" value="Allied Irish Group" class="width-100">
+                     </div>
+
+                     <div class="margin-bottom-big ">
+                        <div class="row">
+                           <div>Icon</div>
+                           <div class="margin-bottom-normal"><img src="img/aib.png" height="32px" height="32px"></div>
+                           <button class="secondary ">Upload</button>
+                        </div>
+                        <div class="row">
+                           <div>Icon</div>
+                           <div class="margin-bottom-normal"><img src="img/aib.png" height="64px" height="64px"></div>
+                           <button class="secondary ">Upload</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="margin-bottom-huge ">
+                     <div>
+                        <div class="subgrid2-equal-v2 margin-bottom-big">
+                           <div>
+                              <h2 class="no-margin"> Institutions</h2>
+                           </div>
+                           <div class="justify-right">
+                              <button class="secondary" id="btn">
+                                <svg viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="financial tiny brand-black margin-right-tiny">
+                               <path d="M16 0.5L29.8564 12.1129H2.14355L16 0.5Z"></path>
+                               <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6788 0.116787C15.8646 -0.038929 16.1354 -0.038929 16.3212 0.116787L30.1776 11.7297C30.3387 11.8647 30.3981 12.0862 30.3263 12.2838C30.2544 12.4814 30.0666 12.6129 29.8564 12.6129H2.14358C1.93333 12.6129 1.74554 12.4814 1.67368 12.2838C1.60183 12.0862 1.66127 11.8647 1.82241 11.7297L15.6788 0.116787ZM16 1.15238L3.51859 11.6129H28.4814L16 1.15238Z"></path>
+                               <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16.0161C8.55228 16.0161 9 16.4638 9 17.0161V25.2742C9 25.8265 8.55228 26.2742 8 26.2742C7.44772 26.2742 7 25.8265 7 25.2742V17.0161C7 16.4638 7.44772 16.0161 8 16.0161Z"></path>
+                               <path fill-rule="evenodd" clip-rule="evenodd" d="M16 16.0161C16.5523 16.0161 17 16.4638 17 17.0161V25.2742C17 25.8265 16.5523 26.2742 16 26.2742C15.4477 26.2742 15 25.8265 15 25.2742V17.0161C15 16.4638 15.4477 16.0161 16 16.0161Z"></path>
+                               <path fill-rule="evenodd" clip-rule="evenodd" d="M24 16.0161C24.5523 16.0161 25 16.4638 25 17.0161V25.2742C25 25.8265 24.5523 26.2742 24 26.2742C23.4477 26.2742 23 25.8265 23 25.2742V17.0161C23 16.4638 23.4477 16.0161 24 16.0161Z"></path>
+                               <path fill-rule="evenodd" clip-rule="evenodd" d="M0 31.5C0 30.9477 0.447715 30.5 1 30.5H31C31.5523 30.5 32 30.9477 32 31.5C32 32.0523 31.5523 32.5 31 32.5H1C0.447715 32.5 0 32.0523 0 31.5Z"></path>
+                            </svg>
+                                 Select institutions
+                              </button>
+                           </div>
+                        </div>
+                        <div>
+                           <!-- The Modal -->
+                           <div id="modal" class="modal ">
+                              <!-- Modal content -->
+                              <!-- Modal content -->
+                              <div class="modal-content slim-center">
+                                 <span class="close">&times;</span>
+                                 <h2>Select institutions</h2>
+                                 <div class="margin-bottom-big justify-top ">
+                                    <div class="dropdown-search ">
+                                       <div id="dropdown-countries" class="dropdown-content3">
+                                         <div class="search">
+                                               <input type="text" class="input-icon width-100 margin-bottom-normal" placeholder="Search">
+                                    
+                                               <div class="flex justify-space-between align-items-center  clear-all"><span>XX selected</span><a href="">Clear</a></div>
+                                         </div>
+                                          <div class="country-list"><label class="container" >
+                                            <div class="flex align-center">
+                                             <img src="img/aib.png" height="32" class="margin-right-normal"><span>Allied Irish Bank (ROI)</span>
+                                            </div>
+                                             <input type="checkbox" checked></a>
+                                             <span class="checkmark"></span>
+                                             </label>
+                                          </div>
+                                          <div class="country-list"><label class="container" >     <div class="flex align-center">
+                                                <img src="img/aib.png" height="32" class="margin-right-normal"><span>Allied Irish Bank Business (ROI)</span>
+                                               </div>
+                                             <input type="checkbox" checked >
+                                             <span class="checkmark"></span>
+                                             </label>
+                                          </div>
+                                          <div class="country-list"><label class="container">Bank
+                                             <input type="checkbox" >
+                                             <span class="checkmark"></span>
+                                             </label>
+                                          </div>
+                                          <div class="country-list"><label class="container">Bank
+                                             <input type="checkbox" >
+                                             <span class="checkmark"></span>
+                                             </label>
+                                          </div>
+                                          <div class="country-list"><label class="container">Bank
+                                             <input type="checkbox" >
+                                             <span class="checkmark"></span>
+                                             </label>
+                                          </div>
+                                          <div class="country-list"><label class="container">Bank
+                                             <input type="checkbox" >
+                                             <span class="checkmark"></span>
+                                             </label>
+                                          </div>
+                                          <div class="country-list"><label class="container">Bank
+                                             <input type="checkbox" >
+                                             <span class="checkmark"></span>
+                                             </label>
+                                          </div>
+                                          <div class="country-list"><label class="container">Bank
+                                             <input type="checkbox" >
+                                             <span class="checkmark"></span>
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!--dropdown-->
+                                 <div class="action-area subgrid2">
+                                   <button class="secondary"> Cancel</button><button class="primary"> Apply</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div>
+                           <div class="multi-select justify-top ">
+                              <div class="subgrid2-equal-v2 selected-country">
+                                 <div class="flex align-center">
+                                  <img src="img/aib.png" height="32" class="margin-right-normal"><span>Allied Irish Bank (ROI)</span>
+                                 </div>
+                                 <div class="justify-right">
+                                    <button class="secondary margin-left-normal">
+                                       <svg  viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0H6V4H0V8H28V4H22V0Z" />
+                                          <path d="M2 12H26V30C26 32.2091 24.2091 34 22 34H6C3.79086 34 2 32.2091 2 30V12Z" />
+                                       </svg>
+                                    </button>
+                                 </div>
+                              </div>
+                              <!--end subgrid-->
+                              <div class="subgrid2-equal-v2  selected-country">
+                                <div class="flex align-center">
+                                 <img src="img/aib.png" height="32" class="margin-right-normal"><span>Allied Irish Bank Business (ROI)</span>
+                                </div>
+                                 <div class="justify-right">
+                                    <button class="secondary margin-left-normal">
+                                       <svg  viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="bin tiny brand-black">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0H6V4H0V8H28V4H22V0Z" />
+                                          <path d="M2 12H26V30C26 32.2091 24.2091 34 22 34H6C3.79086 34 2 32.2091 2 30V12Z" />
+                                       </svg>
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--end multi-select-->
+                        </div>
+                        <!--end subgrid-->
+                     </div>
+                  </div>
+                  <!--end of countries-->
+
+               </div>
+            </div>
+            <!--end of basics-->
+            <div id="Content2" class="  ">
+               <div class="margin-bottom-big">
+                  <div class="margin-bottom-huge">
+                     <h2> Credential group type</h2>
+                     <div class="margin-bottom-big" >
+                        <label>Group type</label>
+                        <select class="width-100">
+                               <option value="2">API key</option>
+                                      <option value="3">Key and secret with sign key</option>
+                           <option value="1">No key</option>
+
+
+                           <option value="4">token.io</option>
+                        </select>
+                     </div>
+
+                  </div>
+                  <!--end features-->
+
+                  <!--end configs-->
+               </div>
+
+            </div>
+            <!--end of products-->
+            <div id="Content3" class="  ">
+               <div>
+                  <div class="margin-bottom-huge">
+                     <div>
+                        <h2>Status</h2>
+
+                        <label class="container2">
+                          <div class="tag ">🟢  Active</div>
+
+                           <input type="radio"  name="radio">
+                           <span class="checkmark2"></span>
+                        </label>
+                        <label class="container2">
+                        <div class="tag ">🔴  Inactive</div>
+
+                           <input type="radio" name="radio">
+                           <span class="checkmark2"></span>
+                        </label>
+
+                     </div>
+                  </div>
+                  <div class="action-area subgrid2">
+                 <button class="secondary width-100">Cancel</button><button class="primary width-100">Save</button>
+              </div>
+
+               </div>
+               <!--end status-->
+            </div>
+            <!--end of enviroments-->
+
+
+            <!--end features-->
+         </div>
+         <!--end of endpoints-->
+         </div>
+      </main>
+      <script>
+         const Yapily = {};
+      </script>
+
+      <script src="js/modal.js"></script>
+      <script src="js/index5.js"></script>
+   </body>
+</html>
