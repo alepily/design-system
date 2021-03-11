@@ -4733,6 +4733,24 @@ text-align: center;
 
 }
 
+.trade .iphone-content.splash-trade {
+	background: #000;
+}
+
+
+.trade button.primary.black-button {
+	color: #fff;
+	border-radius: 4px;
+	background: #000;
+		border: none;
+ justify-content: center;
+font-family: "Roobert-SemiBold";
+text-align: center;
+
+}
+
+
+
 .trade .mobile-header.com{
 
 
@@ -4782,6 +4800,32 @@ font-family: "Roobert-SemiBold";
 
 
 }
+
+.fade-in-slow {
+	opacity: 1;
+	animation: fade-in 1.4s ease-in-out;
+}
+
+@keyframes fade-in-slow {
+	0% {
+		opacity: 0;
+		transform: translateY(5px);
+	}
+	20% {
+		opacity: 0
+	}
+	55% {
+		opacity: 0;
+	}
+	95% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
 
 .trade button.secondary {
 	color: #000;
