@@ -4720,6 +4720,35 @@ pre {
 	}
 }
 
+/*min width*/
+
+.min-width{min-width: 640px;}
+
+/*enrichment*/
+
+.enrichment .emoji-placeholder {
+
+max-width: 44px;
+height:44px;
+display:flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+border: 1px solid #D6E0E9;
+border-radius:4px;
+}
+
+.danger {
+	color: #B50500;
+}
+
+.divider {
+padding-top: 16px;
+padding-bottom: 16px;
+	border-bottom: 1px solid #D6E0E9;
+}
+
+
 /*trade republic*/
 
 .trade button.primary {

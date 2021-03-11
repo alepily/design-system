@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="robots" content="noindex">
+      <title>Demo</title>
+      <script src="js/chart/dist/Chart.min.js"></script>
+      <script src="js/chart/samples/utils.js"></script>
+      <link rel="stylesheet" type="text/css" href="yapilyui.css">
+      <link rel="shortcut icon" href="icons/icon-48x48.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8">
+   </head>
+   <body class=" grid-dashboard hub enrichment" >
+      <header id="top" class="flex justify-space-between">
+         <div class="isologo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="financial grayed tiny margin-right-normal">
+               <path d="M26.7149 0.000520314C23.8356 0.0401149 21.5328 2.43464 21.571 5.34861L21.6184 8.87347C21.6259 9.49756 21.3894 10.099 20.9601 10.5468L20.7878 10.7259C20.3576 11.1756 19.7672 11.4339 19.1489 11.4415L18.6572 11.449L18.6581 11.4518C17.8433 10.922 16.8702 10.6185 15.8291 10.6317C14.937 10.6439 14.1017 10.8871 13.3754 11.3048C13.2143 11.2972 13.056 11.2831 12.893 11.285L12.8372 11.2859C12.2216 11.2944 11.6266 11.0559 11.1852 10.6203C10.7401 10.1839 10.4868 9.58712 10.4775 8.9602L10.4291 5.21192C10.39 2.29795 8.0247 -0.0343606 5.14447 0.00429122C2.26518 0.0429431 -0.03862 2.43841 0.000490693 5.35333C0.0386702 8.26824 2.40487 10.5996 5.28322 10.561L8.765 10.5138C9.38146 10.5053 9.97557 10.7448 10.4179 11.1803L10.5958 11.3538C11.039 11.7912 11.2932 12.3898 11.3016 13.0149L11.3091 13.5117C11.3109 13.5107 11.3128 13.5098 11.3146 13.5089C10.9627 14.2244 10.7662 15.0314 10.7764 15.8864C10.7904 16.9083 11.0995 17.8567 11.6154 18.6543C11.6145 18.7523 11.6043 18.8494 11.6043 18.9493L11.6052 19.005C11.6126 19.6291 11.377 20.2305 10.9468 20.6774C10.5166 21.1289 9.92622 21.3854 9.3079 21.3938L5.60635 21.4429C2.72613 21.4806 0.423258 23.876 0.461438 26.7919C0.499617 29.7078 2.86674 32.0382 5.7451 31.9995C8.62532 31.9618 10.9282 29.5654 10.8891 26.6495L10.8435 23.1256C10.8351 22.5025 11.0716 21.9001 11.5009 21.4523L11.6722 21.2741C12.1043 20.8235 12.6938 20.5661 13.313 20.5586L13.8028 20.552C13.8019 20.5482 13.7991 20.5435 13.7972 20.5388C14.4584 20.8414 15.1922 21.0101 15.9651 20.9988C18.7932 20.9611 21.0541 18.6081 21.0169 15.746C21.0104 15.2284 20.9266 14.7288 20.7804 14.2593C20.8279 13.8643 20.8595 13.4627 20.8549 13.0526V12.996C20.8474 12.3729 21.083 11.7705 21.5123 11.3236C21.9425 10.873 22.5329 10.6166 23.1521 10.6071L26.8546 10.5581C29.7339 10.5185 32.0377 8.124 31.9995 5.20815C31.9604 2.29323 29.5942 -0.040017 26.7149 0.000520314Z" />
+            </svg>
+            <div class="flex column">
+               <h3 class="no-margin">Enrichment</h3>
+               <!-- <span class="tag margin-left-normal internal">Staging</span>-->
+            </div>
+         </div>
+      </header>
+      <main class="fixed-width min-width">
+
+<div class="flex">
+  <div>
+  <div class=" margin-right-big margin-bottom-big ">
+     <div class="card min-width">
+        <h3>Balance</h3>
+        <div class="flex align-center justify-space-between">
+           <div>
+              <h2 class="no-margin">Predicted overdraft</h2>
+              <p>17th of March</p>
+           </div>
+           <div>
+              <h2 class="no-margin">Next incoming payment</h2>
+              <p>28th of March</p>
+           </div>
+        </div>
+        <canvas id="chart"></canvas>
+        <script>
+           var ctx = document.getElementById('chart');
+           var myChart = new Chart(ctx, {
+               type: 'line',
+               data: {
+                   labels: ['1', '2', '3', '4', '5', '6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31'],
+                   datasets: [{
+                       label: 'Historical balance',
+                    data: [2500,2400,700,540, 500,499,300,295,290,250,200,190,90,50,21,NaN,NaN, NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN],
+                       backgroundColor: [
+                           'rgba(10, 168, 81, 0.6)',
+                               'rgba(10, 168, 81, 0.6)',
+                                  'rgba(10, 168, 81, 0.6)',
+                                     'rgba(10, 168, 81, 0.6)',
+                                        'rgba(10, 168, 81, 0.6)',
+                                           'rgba(10, 168, 81, 0.6)',
+                                              'rgba(10, 168, 81, 0.6)',
+                                                 'rgba(10, 168, 81, 0.6)',
+                                                    'rgba(10, 168, 81, 0.6)',
+                                                       'rgba(10, 168, 81, 0.6)',
+                                                          'rgba(10, 168, 81, 0.6)',
+                                                             'rgba(10, 168, 81, 0.6)',
+                                                                'rgba(10, 168, 81, 0.6)',
+                                                                   'rgba(10, 168, 81, 0.6)',
+                                                                      'rgba(10, 168, 81, 0.6)',
+                                                                         'rgba(10, 168, 81, 0.6)',
+
+
+                       ],
+                       borderColor: [
+                               'rgba(10, 168, 81, 1)',
+           'rgba(10, 168, 81, 1)',
+           'rgba(10, 168, 81, 1)',
+           'rgba(10, 168, 81, 1)',
+                  'rgba(10, 168, 81, 1)',
+                         'rgba(10, 168, 81, 1)',
+                                'rgba(10, 168, 81, 1)',
+                                       'rgba(10, 168, 81, 1)',
+                                              'rgba(10, 168, 81, 1)',
+                                                     'rgba(10, 168, 81, 1)',
+                                                            'rgba(10, 168, 81, 1)',
+                                                                   'rgba(10, 168, 81, 1)',
+                                                                          'rgba(10, 168, 81, 1)',
+                                                                                 'rgba(10, 168, 81, 1)',
+                                                                                        'rgba(10, 168, 81, 1)',
+                                                                                               'rgba(10, 168, 81, 1)',
+                                                                                                      'rgba(10, 168, 81, 1)',
+
+                       ],
+                       borderWidth: 1
+
+           },
+
+           {
+            label: 'Predicted balance',
+                                   data: [NaN,NaN,NaN,NaN, NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,20,0, -300,-100,200,190,100,80,75,20,72,60,40,21,2200,2350,2300],
+            backgroundColor: [
+                 'rgba(1, 25, 54, 0)',
+
+            ],
+            borderColor: [
+                 'rgba(1, 25, 54, 1)',
+                    'rgba(1, 25, 54, 1)',
+                       'rgba(1, 25, 54, 1)',
+                          'rgba(1, 25, 54, 1)',
+                             'rgba(1, 25, 54, 1)',
+                                'rgba(1, 25, 54, 1)',
+                                   'rgba(1, 25, 54, 1)',
+                                      'rgba(1, 25, 54, 1)',
+                                         'rgba(1, 25, 54, 1)',
+                                            'rgba(1, 25, 54, 1)',
+                                               'rgba(1, 25, 54, 1)',
+                                                  'rgba(1, 25, 54, 1)',
+                                                     'rgba(1, 25, 54, 1)',
+                                                        'rgba(1, 25, 54, 1)',
+                                                           'rgba(1, 25, 54, 1)',
+                                                              'rgba(1, 25, 54, 1)',
+                                                                 'rgba(1, 25, 54, 1)',
+                                                                    'rgba(1, 25, 54, 1)',
+                                                                       'rgba(1, 25, 54, 1)',
+                                                                          'rgba(1, 25, 54, 1)',
+                                                                             'rgba(1, 25, 54, 1)',
+                                                                                'rgba(1, 25, 54, 1)',
+                                                                                   'rgba(1, 25, 54, 1)',
+                                                                                      'rgba(1, 25, 54, 1)',
+                                                                                         'rgba(1, 25, 54, 1)',
+                                                                                            'rgba(1, 25, 54, 1)',
+                                                                                               'rgba(1, 25, 54, 1)',
+                                                                                                  'rgba(1, 25, 54, 1)',
+                                                                                                     'rgba(1, 25, 54, 1)',
+                                                                                                        'rgba(1, 25, 54, 1)',
+                                                                                                           'rgba(1, 25, 54, 1)',
+                                                                                                              'rgba(1, 25, 54, 1)',
+
+
+
+            ],
+            borderWidth: 1,
+            borderDash: [8, 8],
+
+           },
+
+           {
+            label: '80% Confidence interval',
+                                   data: [NaN,NaN,NaN,NaN, NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,20,0, -300,-100,200,190,100,80,75,20,72,60,40,21,2200,2350,2300],
+            backgroundColor: [
+                'rgba(249, 197, 52, 0)',
+
+            ],
+            borderColor: [
+                  'rgba(249, 197, 52, 1)',
+
+            ],
+            borderWidth: 7
+
+           },
+
+           ]
+           },
+               options: {
+                 scales: {
+                   xAxes: [{
+                     display: true,
+                     scaleLabel: {
+                       display: true,
+                       labelString: 'March'
+                     }
+                   }],
+                   yAxes: [{
+                     display: true,
+                     scaleLabel: {
+                       display: true,
+                       labelString: 'Balance in GBP'
+                     },
+                   }]
+                 }
+               }
+           });
+        </script>
+     </div>
+  </div>
+
+  <div class="card margin-right-big">
+
+    <h3>Financial profile</h3>
+<div class="flex justify-space-between margin-bottom-big">
+    <div class="margin-right-big">
+      <h2 class="margin-bottom-tiny">£2670</h2>
+      <small>Reliable income</small>
+    </div>
+    <div class="margin-right-big">
+        <h2 class="margin-bottom-tiny">£3200</h2>
+      <small>Commited spend</small>
+    </div>
+      <div class="margin-right-big">
+        <h2 class="margin-bottom-tiny">£2900</h2>
+      <small>Max affordability</small>
+    </div>
+      <div class="margin-right-big">
+          <h2 class="margin-bottom-tiny">£100</h2>
+      <small>Actual savings</small>
+    </div>
+
+  </div>
+
+  <div>
+
+    <h3 class="">Flags</h3>
+    <div class="flex ">
+    <div class="margin-right-big">
+    <h2 class="margin-bottom-tiny danger">Gambling</h2>
+
+
+  </div>
+
+  <div class="margin-right-big">
+  <h2 class="margin-bottom-tiny danger">Overdraft</h2>
+
+</div>
+</div>
+
+
+  </div>
+
+
+
+  </div>
+
+</div>
+
+  <div>
+    <div class="card ">
+       <div class="column  margin-bottom-normal align-center">
+          <h3>Transactions</h3>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/money.png" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>Salary</em>   <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em class="positive">+£2500</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+                   <small class="margin-right-big">  Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 93%
+                   </small>
+                </div>
+             </div>
+          </div>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/asda.jpg" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>Asda</em>     <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em>£100</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+             <small class="margin-right-big">  Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 93%
+                   </small>
+                </div>
+             </div>
+          </div>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/fiverr.png" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>Fivrr</em>     <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em class="positive">+£200</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+               <small class="margin-right-big">  Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 33%
+                   </small>
+                </div>
+             </div>
+          </div>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/rent.png" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>Rent</em>   <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em>£1500</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+             <small class="margin-right-big">  Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 93%
+                   </small>
+                </div>
+             </div>
+          </div>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/aldi.jpg" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>Aldi</em>   <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em>£160</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+             <small class="margin-right-big">  Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 93%
+                   </small>
+                </div>
+             </div>
+          </div>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/asda.jpg" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>Asda</em>   <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em>£40</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+             <small class="margin-right-big">  Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 93%
+                   </small>
+                </div>
+             </div>
+          </div>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/sains.jpg" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>Sainsbury's</em>   <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em>£1</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+               <small class="margin-right-big">  Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 93%
+                   </small>
+                </div>
+             </div>
+          </div>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/revolut2.png" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>Transfer</em>   <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em>£199</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+               <small class="margin-right-big"> Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 93%
+                   </small>
+                </div>
+             </div>
+          </div>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/tfl.jpg" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>TFL</em>   <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em>£5</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+             <small class="margin-right-big">  Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 93%
+                   </small>
+                </div>
+             </div>
+          </div>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/tfl.jpg" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>TFL</em>   <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em>£5</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+               <small class="margin-right-big">  Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 93%
+                   </small>
+                </div>
+             </div>
+          </div>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/tesco.png" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>Tesco</em>   <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em>£40</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+               <small class="margin-right-big"> Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 93%
+                   </small>
+                </div>
+             </div>
+          </div>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/spar.png" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>Spar</em>   <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em>£50</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+               <small class="margin-right-big">  Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 93%
+                   </small>
+                </div>
+             </div>
+          </div>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/starbucks.jpeg" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>Starbucks</em>   <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em>£10</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+           <small class="margin-right-big">  Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 93%
+                   </small>
+                </div>
+             </div>
+          </div>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/amazon-icon.jpg" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>Amazon</em>   <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em>£100</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+               <small class="margin-right-big">  Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 93%
+                   </small>
+                </div>
+             </div>
+          </div>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/ee.jpg" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>EE</em>   <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em>£40</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+             <small class="margin-right-big">  Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 93%
+                   </small>
+                </div>
+             </div>
+          </div>
+          <div class="flex transact divider">
+             <div class="emoji-placeholder margin-right-big">
+                <img src="img/subway.png" height="44">
+             </div>
+             <div class="">
+                <div class="flex align-center justify-space-between">
+                   <div>
+                      <em>Subway</em>   <small>  Monthly</small>
+                   </div>
+                   <div class="justify-right text-align-right">
+                      <em>£20</em>
+                   </div>
+                </div>
+                <div class="flex align-center justify-space-between ">
+
+         <small class="margin-right-big">  Schedule consistency: 95%
+                   </small>
+                   <small>  Amount consistency: 93%
+                   </small>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+  </div>
+</div>
+
+      </main>
+   </body>
+</html>
